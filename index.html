@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Анталья и Турецкая Ривьера · Сентябрь 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0f18;
+      --bg2: #111827;
+      --bg3: #1a2332;
+      --gold: #e8a44a;
+      --gold-light: #f2c06e;
+      --gold-dim: rgba(232, 164, 74, 0.15);
+      --text: #e8e8e8;
+      --text-dim: #8a95a3;
+      --border: rgba(232, 164, 74, 0.18);
+      --card-bg: rgba(255,255,255,0.03);
+      --strong: #5b9bd5;
+      --glass: rgba(255,255,255,0.04);
+      --glass-border: rgba(255,255,255,0.08);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 80px 24px 100px;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1589992896912-ba57e73a0b3c?w=1920&q=80');
+      background-size: cover;
+      background-position: center 30%;
+      filter: brightness(0.2) saturate(0.7);
+      z-index: 0;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(10,15,24,0.4) 0%,
+        rgba(10,15,24,0.1) 40%,
+        rgba(10,15,24,0.75) 80%,
+        rgba(10,15,24,1) 100%
+      );
+      z-index: 1;
+    }
+
+    /* Aurora blobs */
+    .hero-aura {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .aura-blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+    }
+
+    .aura-blob-1 {
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(232,164,74,0.18) 0%, transparent 70%);
+      top: -150px; left: 15%;
+      animation: blobFloat1 14s ease-in-out infinite;
+    }
+
+    .aura-blob-2 {
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(91,155,213,0.14) 0%, transparent 70%);
+      bottom: 50px; right: 5%;
+      animation: blobFloat2 18s ease-in-out infinite;
+    }
+
+    .aura-blob-3 {
+      width: 350px; height: 350px;
+      background: radial-gradient(circle, rgba(232,164,74,0.1) 0%, transparent 70%);
+      top: 40%; left: 55%;
+      animation: blobFloat3 11s ease-in-out infinite;
+    }
+
+    @keyframes blobFloat1 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(-40px, 30px) scale(1.08); }
+    }
+    @keyframes blobFloat2 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(30px, -40px) scale(0.92); }
+    }
+    @keyframes blobFloat3 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(20px, -20px) scale(1.05); }
+      66% { transform: translate(-20px, 10px) scale(0.97); }
+    }
+
+    .hero-content { position: relative; z-index: 2; max-width: 780px; }
+
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--border);
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 28px;
+      background: var(--gold-dim);
+      backdrop-filter: blur(8px);
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .hero h1 span { color: var(--gold); }
+
+    .hero-sub {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: var(--text-dim);
+      margin-bottom: 52px;
+      font-weight: 300;
+      letter-spacing: 0.03em;
+    }
+
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      flex-wrap: wrap;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      backdrop-filter: blur(16px);
+      background: rgba(10,15,24,0.55);
+    }
+
+    .stat {
+      padding: 22px 36px;
+      border-right: 1px solid var(--border);
+      flex: 1;
+      min-width: 120px;
+      transition: background 0.25s;
+    }
+
+    .stat:hover { background: rgba(232,164,74,0.06); }
+    .stat:last-child { border-right: none; }
+
+    .stat-value {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-dim);
+      font-weight: 500;
+    }
+
+    /* ─── SCROLL HINT ─── */
+    .scroll-hint {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-dim);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .scroll-hint::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 44px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      animation: scrollLine 2s ease-in-out infinite;
+    }
+
+    @keyframes scrollLine {
+      0%, 100% { opacity: 1; transform: scaleY(1) translateY(0); }
+      50% { opacity: 0.3; transform: scaleY(0.5) translateY(8px); }
+    }
+
+    /* ─── CAROUSEL ─── */
+    .section-carousel {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel {
+      position: relative;
+      height: 560px;
+      overflow: hidden;
+    }
+
+    @media (max-width: 600px) {
+      .carousel { height: 420px; }
+    }
+
+    .carousel-track {
+      display: flex;
+      height: 100%;
+      transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .carousel-slide {
+      min-width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .carousel-slide-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.7s ease;
+    }
+
+    .carousel-slide:hover .carousel-slide-bg {
+      transform: scale(1.03);
+    }
+
+    .carousel-slide::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(10,15,24,0.92) 0%,
+        rgba(10,15,24,0.5) 40%,
+        rgba(10,15,24,0.15) 70%,
+        rgba(10,15,24,0.3) 100%
+      );
+      z-index: 1;
+    }
+
+    .carousel-slide-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 48px 64px;
+      z-index: 2;
+    }
+
+    @media (max-width: 600px) {
+      .carousel-slide-content { padding: 32px 24px; }
+    }
+
+    .carousel-slide-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--border);
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: var(--gold-dim);
+      backdrop-filter: blur(8px);
+      margin-bottom: 14px;
+    }
+
+    .carousel-slide-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .carousel-slide-desc {
+      font-size: 0.9rem;
+      color: rgba(232,232,232,0.75);
+      font-weight: 300;
+      max-width: 540px;
+      line-height: 1.65;
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      background: rgba(10,15,24,0.6);
+      border: 1px solid var(--border);
+      color: var(--gold);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1.2rem;
+      backdrop-filter: blur(12px);
+      transition: background 0.2s, transform 0.2s, border-color 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .carousel-btn:hover {
+      background: rgba(232,164,74,0.15);
+      border-color: var(--gold);
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .carousel-prev { left: 24px; }
+    .carousel-next { right: 24px; }
+
+    .carousel-dots {
+      position: absolute;
+      bottom: 20px;
+      right: 64px;
+      z-index: 10;
+      display: flex;
+      gap: 8px;
+    }
+
+    @media (max-width: 600px) {
+      .carousel-dots { right: 24px; bottom: 14px; }
+    }
+
+    .carousel-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.3);
+      cursor: pointer;
+      transition: background 0.3s, width 0.3s;
+      border: none;
+    }
+
+    .carousel-dot.active {
+      background: var(--gold);
+      width: 22px;
+      border-radius: 3px;
+    }
+
+    .carousel-counter {
+      position: absolute;
+      top: 24px;
+      right: 64px;
+      z-index: 10;
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.1em;
+      font-family: 'Playfair Display', serif;
+    }
+
+    @media (max-width: 600px) {
+      .carousel-counter { right: 24px; }
+    }
+
+    /* ─── SECTIONS ─── */
+    section { position: relative; }
+
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), var(--gold), var(--border), transparent);
+      margin: 0;
+    }
+
+    .section-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 96px 24px;
+    }
+
+    .section-header { margin-bottom: 60px; }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .section-desc {
+      color: var(--text-dim);
+      font-size: 1rem;
+      max-width: 560px;
+      font-weight: 300;
+    }
+
+    /* ─── SECTION BACKGROUNDS ─── */
+    .section-sea { background-color: var(--bg); }
+    .section-history { background-color: var(--bg2); }
+    .section-route { background-color: var(--bg); }
+    .section-tips { background-color: var(--bg2); }
+    .section-vote { background-color: var(--bg); }
+
+    /* ─── CARDS GRID ─── */
+    .cards-group { margin-bottom: 52px; }
+
+    .cards-group-title {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 22px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .cards-group-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 14px;
+      padding: 24px 26px;
+      transition: border-color 0.3s, background 0.3s, transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(232,164,74,0.04) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .card:hover {
+      border-color: rgba(232,164,74,0.3);
+      background: rgba(255,255,255,0.06);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(232,164,74,0.08);
+    }
+
+    .card:hover::before { opacity: 1; }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      gap: 12px;
+    }
+
+    .card-icon {
+      font-size: 1.7rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .badge {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 20px;
+      flex-shrink: 0;
+    }
+
+    .badge-must {
+      background: rgba(232, 164, 74, 0.12);
+      color: var(--gold);
+      border: 1px solid rgba(232, 164, 74, 0.28);
+    }
+
+    .badge-strong {
+      background: rgba(91, 155, 213, 0.1);
+      color: #7ab3d8;
+      border: 1px solid rgba(91, 155, 213, 0.22);
+    }
+
+    .card-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.08rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .card-desc {
+      font-size: 0.875rem;
+      color: var(--text-dim);
+      line-height: 1.68;
+    }
+
+    /* ─── ROUTE SECTION ─── */
+    .route-section-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+    }
+
+    .preliminary-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #7ab3d8;
+      border: 1px dashed rgba(91,155,213,0.4);
+      padding: 5px 14px;
+      border-radius: 20px;
+      background: rgba(91,155,213,0.07);
+      margin-top: 4px;
+    }
+
+    .preliminary-badge::before {
+      content: '✦';
+      font-size: 9px;
+    }
+
+    .route-blocks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .route-block {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 14px;
+      padding: 30px;
+      border-top: 2px solid var(--gold);
+      transition: border-color 0.2s, box-shadow 0.3s, transform 0.3s;
+    }
+
+    .route-block:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+    }
+
+    .route-block:last-child { border-top-color: var(--strong); }
+
+    .route-block-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .route-block:last-child .route-block-label { color: #7ab3d8; }
+
+    .route-block-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .route-stops { display: flex; flex-direction: column; gap: 10px; }
+
+    .route-stop {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: var(--text-dim);
+    }
+
+    .route-stop::before {
+      content: '→';
+      color: var(--gold);
+      font-size: 0.78rem;
+      flex-shrink: 0;
+    }
+
+    .route-block:last-child .route-stop::before { color: #7ab3d8; }
+
+    .route-stop strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* ─── TIPS SECTION ─── */
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .tip-card {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 14px;
+      padding: 26px;
+      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .tip-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--border);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+    }
+
+    .tip-icon {
+      font-size: 1.8rem;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .tip-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .tip-text {
+      font-size: 0.875rem;
+      color: var(--text-dim);
+      line-height: 1.7;
+    }
+
+    .tip-text strong {
+      color: var(--gold-light);
+      font-weight: 500;
+    }
+
+    /* ─── PHOTO BREAK ─── */
+    .photo-break {
+      height: 340px;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .photo-break::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(10,15,24,0.65) 0%, rgba(10,15,24,0.25) 50%, rgba(10,15,24,0.65) 100%);
+    }
+
+    .photo-break-1 {
+      background-image: url('https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?w=1920&q=80');
+    }
+
+    .photo-break-2 {
+      background-image: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1920&q=80');
+    }
+
+    /* ─── VOTING ─── */
+    .vote-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 720px;
+    }
+
+    .vote-question {}
+
+    .vote-q-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+
+    .vote-options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .vote-opt {
+      cursor: pointer;
+      display: block;
+    }
+
+    .vote-opt input[type="radio"] { display: none; }
+
+    .vote-opt-inner {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 20px;
+      border: 1px solid var(--glass-border);
+      border-radius: 10px;
+      background: var(--glass);
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      transition: border-color 0.2s, background 0.2s, color 0.2s, transform 0.15s;
+      user-select: none;
+    }
+
+    .vote-opt-inner::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.2);
+      flex-shrink: 0;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .vote-opt:hover .vote-opt-inner {
+      border-color: var(--border);
+      color: var(--text);
+      transform: translateX(3px);
+    }
+
+    .vote-opt input[type="radio"]:checked + .vote-opt-inner {
+      border-color: var(--gold);
+      background: var(--gold-dim);
+      color: var(--text);
+    }
+
+    .vote-opt input[type="radio"]:checked + .vote-opt-inner::before {
+      border-color: var(--gold);
+      background: var(--gold);
+    }
+
+    .vote-error {
+      color: #f28b82;
+      font-size: 0.85rem;
+      margin-top: 12px;
+      display: none;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .vote-error.visible { display: flex; }
+    .vote-error::before { content: '⚠'; }
+
+    .vote-btn {
+      margin-top: 36px;
+      padding: 14px 40px;
+      background: linear-gradient(135deg, var(--gold), #c87c2a);
+      color: #0a0f18;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(232,164,74,0.25);
+    }
+
+    .vote-btn:hover {
+      opacity: 0.92;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 28px rgba(232,164,74,0.35);
+    }
+
+    .vote-btn:active { transform: translateY(0); }
+
+    /* ─── VOTE RESULTS ─── */
+    .vote-results { display: none; max-width: 720px; }
+    .vote-results.visible { display: block; }
+
+    .vote-results-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 44px;
+    }
+
+    .vote-results-icon {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--gold-dim);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .vote-results-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .vote-results-subtitle {
+      font-size: 0.82rem;
+      color: var(--text-dim);
+    }
+
+    .result-question { margin-bottom: 36px; }
+
+    .result-q-title {
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+
+    .result-options { display: flex; flex-direction: column; gap: 12px; }
+
+    .result-option {}
+
+    .result-option-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+      font-size: 0.875rem;
+    }
+
+    .result-option-label { color: var(--text); }
+    .result-option-count {
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .result-bar-bg {
+      height: 6px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .result-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      border-radius: 3px;
+      width: 0;
+      transition: width 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .result-bar.winner { background: linear-gradient(90deg, var(--gold), #f2c06e); }
+
+    .result-option.is-voted .result-option-label {
+      color: var(--gold-light);
+      font-weight: 500;
+    }
+
+    .result-option.is-voted .result-option-label::after {
+      content: ' ✓';
+      font-size: 0.75rem;
+      color: var(--gold);
+    }
+
+    .vote-separator {
+      height: 1px;
+      background: var(--border);
+      margin: 32px 0;
+      opacity: 0.5;
+    }
+
+    .vote-total {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      text-align: right;
+      margin-top: 8px;
+    }
+
+    /* ─── SCROLL REVEAL ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .reveal-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .delay-1 { transition-delay: 0.08s; }
+    .delay-2 { transition-delay: 0.16s; }
+    .delay-3 { transition-delay: 0.24s; }
+    .delay-4 { transition-delay: 0.32s; }
+    .delay-5 { transition-delay: 0.40s; }
+
+    /* ─── FOOTER ─── */
+    .footer {
+      background: var(--bg);
+      text-align: center;
+      padding: 52px 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-text {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      letter-spacing: 0.08em;
+    }
+
+    .footer-text span { color: var(--gold); }
+
+    /* ─── MOBILE ─── */
+    @media (max-width: 600px) {
+      .stat { padding: 18px 20px; min-width: 100px; }
+      .stat-value { font-size: 1.4rem; }
+      .section-inner { padding: 64px 18px; }
+      .photo-break { height: 220px; background-attachment: scroll; }
+      .route-block { padding: 24px 20px; }
+      .carousel-btn { width: 38px; height: 38px; font-size: 1rem; }
+      .carousel-prev { left: 12px; }
+      .carousel-next { right: 12px; }
+    }
+
+    @media (max-width: 420px) {
+      .hero-stats { flex-direction: column; }
+      .stat { border-right: none; border-bottom: 1px solid var(--border); }
+      .stat:last-child { border-bottom: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-aura">
+    <div class="aura-blob aura-blob-1"></div>
+    <div class="aura-blob aura-blob-2"></div>
+    <div class="aura-blob aura-blob-3"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Турецкая Ривьера · 2026</div>
+    <h1>Анталья и <span>Турецкая<br/>Ривьера</span></h1>
+    <p class="hero-sub">7–18 сентября · 4 человека · 150 км вглубь</p>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-value">12</span>
+        <span class="stat-label">дней</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">4</span>
+        <span class="stat-label">человека</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">~150</span>
+        <span class="stat-label">км</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">2</span>
+        <span class="stat-label">базы</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">Смотреть</div>
+</section>
+
+<!-- ═══════════════════════════ CAROUSEL ═══════════════════════════ -->
+<div class="section-divider"></div>
+<section class="section-carousel">
+  <div class="carousel" id="carousel">
+    <div class="carousel-track" id="carouselTrack">
+
+      <div class="carousel-slide">
+        <div class="carousel-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1566073771259-de62e4de29c8?w=1600&q=85')"></div>
+        <div class="carousel-slide-content">
+          <div class="carousel-slide-badge">Старый город</div>
+          <div class="carousel-slide-title">Kaleiçi</div>
+          <div class="carousel-slide-desc">Венецианская гавань, узкие мощёные улочки, башня Хыдырлык. Анталья, которую не ждёшь. Лучше вечером.</div>
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <div class="carousel-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=1600&q=85')"></div>
+        <div class="carousel-slide-content">
+          <div class="carousel-slide-badge">Дикий пляж</div>
+          <div class="carousel-slide-title">Çıralı Beach</div>
+          <div class="carousel-slide-desc">3 километра сосновых лесов прямо к морю. Черепахи Caretta caretta. Никаких отелей на горизонте. Лучший пляж западнее Антальи.</div>
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <div class="carousel-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1571566882372-1598d88abd90?w=1600&q=85')"></div>
+        <div class="carousel-slide-content">
+          <div class="carousel-slide-badge">Античный город</div>
+          <div class="carousel-slide-title">Phaselis</div>
+          <div class="carousel-slide-desc">Руины у трёх бухт одновременно. Купаться прямо среди колонн. Один из сильнейших объектов региона.</div>
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <div class="carousel-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1600&q=85')"></div>
+        <div class="carousel-slide-content">
+          <div class="carousel-slide-badge">1050 м над морем</div>
+          <div class="carousel-slide-title">Термессос</div>
+          <div class="carousel-slide-desc">Древний город, который не покорил Александр Македонский. Амфитеатр с панорамой Тавра — лучший вид в регионе.</div>
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <div class="carousel-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=85')"></div>
+        <div class="carousel-slide-content">
+          <div class="carousel-slide-badge">Лучший в мире</div>
+          <div class="carousel-slide-title">Aspendos</div>
+          <div class="carousel-slide-desc">Лучший сохранившийся римский театр на планете. Вживую впечатляет больше, чем на фото — и это редкость.</div>
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <div class="carousel-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=1600&q=85')"></div>
+        <div class="carousel-slide-content">
+          <div class="carousel-slide-badge">Закат</div>
+          <div class="carousel-slide-title">Side · Храм Аполлона</div>
+          <div class="carousel-slide-desc">Античные колонны прямо у моря. Один из самых фотогеничных закатов Средиземноморья. Ехать вечером.</div>
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <div class="carousel-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?w=1600&q=85')"></div>
+        <div class="carousel-slide-content">
+          <div class="carousel-slide-badge">Природный феномен</div>
+          <div class="carousel-slide-title">Yanartaş · Химера</div>
+          <div class="carousel-slide-desc">Вечные огни из трещин в скале. Единственное такое место в регионе. Подъём 20 минут — только после заката.</div>
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <div class="carousel-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1569629743817-70d8db6c323b?w=1600&q=85')"></div>
+        <div class="carousel-slide-content">
+          <div class="carousel-slide-badge">Каньон</div>
+          <div class="carousel-slide-title">Göynük Canyon</div>
+          <div class="carousel-slide-desc">Бирюзовая вода в ущелье — можно плыть по каньону. Физически несложно, визуально сильно. Прямо рядом с Кемером.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-btn carousel-prev" id="carouselPrev">←</button>
+    <button class="carousel-btn carousel-next" id="carouselNext">→</button>
+    <div class="carousel-dots" id="carouselDots"></div>
+    <div class="carousel-counter" id="carouselCounter"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ SEA & BEACHES ═══════════════════════════ -->
+<div class="section-divider"></div>
+<section class="section-sea">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Часть первая</div>
+      <h2 class="section-title">Море и пляжи</h2>
+      <p class="section-desc">Первые дни — вода, скалы, античные развалины у берега. База в Анталье или Кемере.</p>
+    </div>
+
+    <div class="cards-group">
+      <div class="cards-group-title reveal">Must visit</div>
+      <div class="cards-grid">
+        <div class="card reveal delay-1">
+          <div class="card-top">
+            <span class="card-icon">🏖️</span>
+            <span class="badge badge-must">Must</span>
+          </div>
+          <div class="card-name">Konyaaltı Beach</div>
+          <div class="card-desc">Городской галечный пляж, удобен в первый день. Горы Тавр прямо с воды — без resort-формата и туристических толп.</div>
+        </div>
+        <div class="card reveal delay-2">
+          <div class="card-top">
+            <span class="card-icon">🐢</span>
+            <span class="badge badge-must">Must</span>
+          </div>
+          <div class="card-name">Çıralı Beach</div>
+          <div class="card-desc">Дикий 3-километровый пляж среди сосновых лесов. Черепахи Caretta caretta. Лучший пляж западнее Антальи — тихо и атмосферно.</div>
+        </div>
+        <div class="card reveal delay-3">
+          <div class="card-top">
+            <span class="card-icon">🌊</span>
+            <span class="badge badge-must">Must</span>
+          </div>
+          <div class="card-name">Adrasan Bay</div>
+          <div class="card-desc">Закрытая бухта, кристальная вода, почти нет инфраструктуры. Работает только в связке с Çıralı — одна база на двоих.</div>
+        </div>
+        <div class="card reveal delay-4">
+          <div class="card-top">
+            <span class="card-icon">⛵</span>
+            <span class="badge badge-must">Must</span>
+          </div>
+          <div class="card-name">Maden Bay (Tekirova)</div>
+          <div class="card-desc">Скрытая бухта у подножья горы. Добираться только на лодке или сложной тропой. Реально worth it.</div>
+        </div>
+        <div class="card reveal delay-5">
+          <div class="card-top">
+            <span class="card-icon">🏛️</span>
+            <span class="badge badge-must">Must</span>
+          </div>
+          <div class="card-name">Phaselis</div>
+          <div class="card-desc">Античный город прямо у трёх бухт. Уникальное сочетание: руины + плавание. Один из сильнейших объектов в регионе.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards-group">
+      <div class="cards-group-title reveal">Strong option</div>
+      <div class="cards-grid">
+        <div class="card reveal delay-1">
+          <div class="card-top">
+            <span class="card-icon">🏝️</span>
+            <span class="badge badge-strong">Strong</span>
+          </div>
+          <div class="card-name">Suluada</div>
+          <div class="card-desc">Boat trip к острову с белыми скалами и бирюзовой водой. Визуально мощно, но зависит от погоды и числа лодок в тот день.</div>
+        </div>
+        <div class="card reveal delay-2">
+          <div class="card-top">
+            <span class="card-icon">⚓</span>
+            <span class="badge badge-strong">Strong</span>
+          </div>
+          <div class="card-name">Kemer</div>
+          <div class="card-desc">Курортный городок с мариной. Сам по себе не цель — хорош как логистический хаб для западных точек.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PHOTO BREAK 1 ═══════════════════════════ -->
+<div class="photo-break photo-break-1"></div>
+
+<!-- ═══════════════════════════ HISTORY & NATURE ═══════════════════════════ -->
+<div class="section-divider"></div>
+<section class="section-history">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Часть вторая</div>
+      <h2 class="section-title">История и природа</h2>
+      <p class="section-desc">Вторая половина поездки — каньоны, древние города, вечные огни. Движение на запад и на восток.</p>
+    </div>
+
+    <div class="cards-group">
+      <div class="cards-group-title reveal">Must visit</div>
+      <div class="cards-grid">
+        <div class="card reveal delay-1">
+          <div class="card-top">
+            <span class="card-icon">🏔️</span>
+            <span class="badge badge-must">Must</span>
+          </div>
+          <div class="card-name">Termessos</div>
+          <div class="card-desc">Древний город на 1050 м, который не завоевал Александр Македонский. Амфитеатр с панорамой Тавра — лучший вид в регионе. Ходьба умеренная.</div>
+        </div>
+        <div class="card reveal delay-2">
+          <div class="card-top">
+            <span class="card-icon">🎭</span>
+            <span class="badge badge-must">Must</span>
+          </div>
+          <div class="card-name">Aspendos</div>
+          <div class="card-desc">Лучший сохранившийся римский театр в мире. Реально впечатляет вживую — и не переоценён.</div>
+        </div>
+        <div class="card reveal delay-3">
+          <div class="card-top">
+            <span class="card-icon">🌅</span>
+            <span class="badge badge-must">Must</span>
+          </div>
+          <div class="card-name">Side Ancient City</div>
+          <div class="card-desc">Античный город прямо в жилом квартале. Храм Аполлона у моря на закате — одна из самых фотогеничных точек. Вечером толпы не мешают.</div>
+        </div>
+        <div class="card reveal delay-4">
+          <div class="card-top">
+            <span class="card-icon">🕌</span>
+            <span class="badge badge-must">Must</span>
+          </div>
+          <div class="card-name">Kaleiçi</div>
+          <div class="card-desc">Старый город Антальи — в первый или последний день. Венецианская гавань, узкие улочки, башня Хыдырлык. Не банально, реально атмосферно.</div>
+        </div>
+        <div class="card reveal delay-5">
+          <div class="card-top">
+            <span class="card-icon">🔥</span>
+            <span class="badge badge-must">Must</span>
+          </div>
+          <div class="card-name">Yanartaş (Chimera)</div>
+          <div class="card-desc">Вечные огни из трещин в скалах. Подъём 20 минут, лучше после заката. Необычный природный феномен — единственное такое место в регионе.</div>
+        </div>
+        <div class="card reveal delay-1">
+          <div class="card-top">
+            <span class="card-icon">💧</span>
+            <span class="badge badge-must">Must</span>
+          </div>
+          <div class="card-name">Göynük Canyon</div>
+          <div class="card-desc">Каньон с бирюзовой водой — можно плыть по ущелью. Физически несложно, визуально сильно. Прямо рядом с Кемером.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards-group">
+      <div class="cards-group-title reveal">Strong option</div>
+      <div class="cards-grid">
+        <div class="card reveal delay-1">
+          <div class="card-top">
+            <span class="card-icon">🌿</span>
+            <span class="badge badge-strong">Strong</span>
+          </div>
+          <div class="card-name">Olympos Ancient City</div>
+          <div class="card-desc">Руины в лесу прямо у пляжа. Атмосферное место, но слабее Phaselis по концентрации впечатлений.</div>
+        </div>
+        <div class="card reveal delay-2">
+          <div class="card-top">
+            <span class="card-icon">⛰️</span>
+            <span class="badge badge-strong">Strong</span>
+          </div>
+          <div class="card-name">Myra / Demre</div>
+          <div class="card-desc">Ликийские гробницы в скалах + церковь Св. Николая. Дальняя точка (~150 км) — только если делать большой западный маршрут.</div>
+        </div>
+        <div class="card reveal delay-3">
+          <div class="card-top">
+            <span class="card-icon">🏟️</span>
+            <span class="badge badge-strong">Strong</span>
+          </div>
+          <div class="card-name">Perge</div>
+          <div class="card-desc">Большой античный город восточнее Антальи. Менее известен чем Aspendos, но масштабнее. Хорошо сочетается с Aspendos в один день.</div>
+        </div>
+        <div class="card reveal delay-4">
+          <div class="card-top">
+            <span class="card-icon">🌊</span>
+            <span class="badge badge-strong">Strong</span>
+          </div>
+          <div class="card-name">Lower Düden Waterfall</div>
+          <div class="card-desc">Водопад прямо в море у Lara. Красиво с лодки, с берега скромнее.</div>
+        </div>
+        <div class="card reveal delay-5">
+          <div class="card-top">
+            <span class="card-icon">🌳</span>
+            <span class="badge badge-strong">Strong</span>
+          </div>
+          <div class="card-name">Kurşunlu Waterfall</div>
+          <div class="card-desc">Природный парк с каскадами. Прохладно, зелено — хорошо после жарких дней. Не must, но приятно.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PHOTO BREAK 2 ═══════════════════════════ -->
+<div class="photo-break photo-break-2"></div>
+
+<!-- ═══════════════════════════ ROUTE ═══════════════════════════ -->
+<div class="section-divider"></div>
+<section class="section-route">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Маршрут</div>
+      <div style="display:flex; align-items:flex-start; gap:16px; flex-wrap:wrap; margin-bottom:16px;">
+        <h2 class="section-title" style="margin-bottom:0">Логика движения</h2>
+        <div class="preliminary-badge">Предварительный план</div>
+      </div>
+      <p class="section-desc">Два блока + опциональный восточный день. Машина нужна с первого дня. Детали уточняем ближе к поездке.</p>
+    </div>
+
+    <div class="route-blocks">
+      <div class="route-block reveal delay-1">
+        <div class="route-block-label">Дни 1–5</div>
+        <div class="route-block-title">База в Анталье или Кемере</div>
+        <div class="route-stops">
+          <div class="route-stop"><strong>Konyaaltı</strong> — первый день, городской пляж</div>
+          <div class="route-stop"><strong>Kaleiçi</strong> — старый город, вечер</div>
+          <div class="route-stop"><strong>Kurşunlu</strong> — утром, до жары</div>
+          <div class="route-stop"><strong>Termessos</strong> — ранний выезд обязателен</div>
+          <div class="route-stop"><strong>Phaselis</strong> — руины + море</div>
+          <div class="route-stop"><strong>Göynük Canyon</strong> — каньон у Кемера</div>
+          <div class="route-stop"><strong>Kemer</strong> — логистический хаб</div>
+        </div>
+      </div>
+      <div class="route-block reveal delay-2">
+        <div class="route-block-label">Дни 6–11</div>
+        <div class="route-block-title">Движение на запад</div>
+        <div class="route-stops">
+          <div class="route-stop"><strong>Çıralı</strong> — база, дикий пляж</div>
+          <div class="route-stop"><strong>Olympos</strong> — руины в лесу</div>
+          <div class="route-stop"><strong>Yanartaş</strong> — вечные огни после заката</div>
+          <div class="route-stop"><strong>Adrasan</strong> — закрытая бухта</div>
+          <div class="route-stop"><strong>Suluada</strong> — boat trip (проверить заранее)</div>
+          <div class="route-stop"><strong>Myra</strong> — если хватает сил, ~150 км</div>
+        </div>
+      </div>
+      <div class="route-block reveal delay-3">
+        <div class="route-block-label">Опционально · Восток</div>
+        <div class="route-block-title">Один день, ~120 км</div>
+        <div class="route-stops">
+          <div class="route-stop"><strong>Perge</strong> — масштабный античный город</div>
+          <div class="route-stop"><strong>Aspendos</strong> — римский театр, выезд утром</div>
+          <div class="route-stop"><strong>Side</strong> — храм Аполлона на закате</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ TIPS ═══════════════════════════ -->
+<div class="section-divider"></div>
+<section class="section-tips">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Практика</div>
+      <h2 class="section-title">Что важно знать</h2>
+    </div>
+    <div class="tips-grid">
+      <div class="tip-card reveal delay-1">
+        <span class="tip-icon">🚗</span>
+        <div class="tip-title">Машина</div>
+        <div class="tip-text">Нужна <strong>с первого дня</strong> — без неё западные точки недоступны. Дороги хорошие, серпантины умеренные. Парковка у основных объектов есть.</div>
+      </div>
+      <div class="tip-card reveal delay-2">
+        <span class="tip-icon">☀️</span>
+        <div class="tip-title">Жара</div>
+        <div class="tip-text">Сентябрь <strong>+30–35°C</strong>. Ранние выезды до 10:00 критичны для руин и каньонов. Afternoon — море или тень.</div>
+      </div>
+      <div class="tip-card reveal delay-3">
+        <span class="tip-icon">⚠️</span>
+        <div class="tip-title">Риски толп</div>
+        <div class="tip-text"><strong>Side и Aspendos</strong> переполнены днём — ехать утром или вечером. <strong>Suluada</strong> — проверять заранее количество лодок в тот день.</div>
+      </div>
+      <div class="tip-card reveal delay-4">
+        <span class="tip-icon">🏡</span>
+        <div class="tip-title">Жильё</div>
+        <div class="tip-text"><strong>Çıralı</strong> — лучшая база для западной части, тихо, есть хорошие аренды. <strong>Анталья / Кемер</strong> — удобно для первой части маршрута.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ VOTE ═══════════════════════════ -->
+<div class="section-divider"></div>
+<section class="section-vote">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Голосование</div>
+      <h2 class="section-title">Что думаете?</h2>
+      <p class="section-desc">Отметьте свои предпочтения — итог сформируем вместе. Каждый браузер голосует один раз.</p>
+    </div>
+
+    <!-- FORM -->
+    <div id="voteForm" class="vote-grid reveal">
+
+      <div class="vote-question">
+        <div class="vote-q-title">1. Куда больше тянет?</div>
+        <div class="vote-options">
+          <label class="vote-opt"><input type="radio" name="q1" value="beach"><span class="vote-opt-inner">🏖️ Море и пляжи</span></label>
+          <label class="vote-opt"><input type="radio" name="q1" value="history"><span class="vote-opt-inner">🏛️ История и природа</span></label>
+          <label class="vote-opt"><input type="radio" name="q1" value="equal"><span class="vote-opt-inner">⚖️ Поровну — 50/50</span></label>
+        </div>
+      </div>
+
+      <div class="vote-question">
+        <div class="vote-q-title">2. База для второй недели?</div>
+        <div class="vote-options">
+          <label class="vote-opt"><input type="radio" name="q2" value="cirali"><span class="vote-opt-inner">🌿 Чыралы — тихо, дикая природа</span></label>
+          <label class="vote-opt"><input type="radio" name="q2" value="kemer"><span class="vote-opt-inner">🏙️ Кемер — удобнее и с инфраструктурой</span></label>
+          <label class="vote-opt"><input type="radio" name="q2" value="antalya"><span class="vote-opt-inner">🌆 Остаёмся в Анталье</span></label>
+        </div>
+      </div>
+
+      <div class="vote-question">
+        <div class="vote-q-title">3. Поход в Термессос?</div>
+        <div class="vote-options">
+          <label class="vote-opt"><input type="radio" name="q3" value="yes"><span class="vote-opt-inner">✅ Да, обязательно берём</span></label>
+          <label class="vote-opt"><input type="radio" name="q3" value="no"><span class="vote-opt-inner">🏖️ Нет, лучше лишний день на пляже</span></label>
+          <label class="vote-opt"><input type="radio" name="q3" value="maybe"><span class="vote-opt-inner">🤔 Решим на месте по состоянию</span></label>
+        </div>
+      </div>
+
+      <div>
+        <div id="voteError" class="vote-error">Ответьте на все вопросы, прежде чем голосовать</div>
+        <button id="voteSubmit" class="vote-btn">Проголосовать</button>
+      </div>
+
+    </div>
+
+    <!-- RESULTS -->
+    <div id="voteResults" class="vote-results">
+
+      <div class="vote-results-header">
+        <div class="vote-results-icon">✓</div>
+        <div>
+          <div class="vote-results-title">Голос принят</div>
+          <div class="vote-results-subtitle">Итоги голосования по всем участникам</div>
+        </div>
+      </div>
+
+      <div id="resultsBody"></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<div class="section-divider"></div>
+<footer class="footer">
+  <p class="footer-text">Подготовлено для личного использования · <span>Сентябрь 2026</span></p>
+</footer>
+
+<script>
+/* ─── CAROUSEL ─── */
+(function() {
+  const track = document.getElementById('carouselTrack');
+  const slides = track.querySelectorAll('.carousel-slide');
+  const dotsContainer = document.getElementById('carouselDots');
+  const counter = document.getElementById('carouselCounter');
+  const total = slides.length;
+  let current = 0;
+  let timer;
+
+  // Build dots
+  const dots = [];
+  slides.forEach((_, i) => {
+    const d = document.createElement('button');
+    d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Слайд ' + (i + 1));
+    d.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(d);
+    dots.push(d);
+  });
+
+  function updateUI() {
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    counter.textContent = (current + 1) + ' / ' + total;
+  }
+
+  function goTo(idx) {
+    current = (idx + total) % total;
+    updateUI();
+    resetTimer();
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => goTo(current + 1), 5000);
+  }
+
+  document.getElementById('carouselPrev').addEventListener('click', () => goTo(current - 1));
+  document.getElementById('carouselNext').addEventListener('click', () => goTo(current + 1));
+
+  // Keyboard
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+    if (e.key === 'ArrowRight') goTo(current + 1);
+  });
+
+  // Touch swipe
+  let touchX = null;
+  track.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', e => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 40) goTo(current + (dx < 0 ? 1 : -1));
+    touchX = null;
+  });
+
+  // Pause on hover
+  const carousel = document.getElementById('carousel');
+  carousel.addEventListener('mouseenter', () => clearInterval(timer));
+  carousel.addEventListener('mouseleave', resetTimer);
+
+  updateUI();
+  resetTimer();
+})();
+
+/* ─── SCROLL REVEAL ─── */
+(function() {
+  const els = document.querySelectorAll('.reveal, .reveal-left');
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(el => el.classList.add('visible'));
+    return;
+  }
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(el => observer.observe(el));
+})();
+
+/* ─── VOTING ─── */
+(function() {
+  const STORAGE_KEY = 'antalya_votes_v1';
+  const VOTED_KEY   = 'antalya_voted_v1';
+
+  const questions = [
+    {
+      key: 'q1',
+      label: 'Куда больше тянет?',
+      options: [
+        { value: 'beach',   label: '🏖️ Море и пляжи' },
+        { value: 'history', label: '🏛️ История и природа' },
+        { value: 'equal',   label: '⚖️ Поровну — 50/50' },
+      ]
+    },
+    {
+      key: 'q2',
+      label: 'База для второй недели?',
+      options: [
+        { value: 'cirali',  label: '🌿 Чыралы' },
+        { value: 'kemer',   label: '🏙️ Кемер' },
+        { value: 'antalya', label: '🌆 Остаёмся в Анталье' },
+      ]
+    },
+    {
+      key: 'q3',
+      label: 'Поход в Термессос?',
+      options: [
+        { value: 'yes',   label: '✅ Да, обязательно' },
+        { value: 'no',    label: '🏖️ Нет, пляж' },
+        { value: 'maybe', label: '🤔 Решим на месте' },
+      ]
+    }
+  ];
+
+  function getVotes() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+    catch { return {}; }
+  }
+
+  function saveVotes(votes) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(votes));
+  }
+
+  function hasVoted() {
+    return !!localStorage.getItem(VOTED_KEY);
+  }
+
+  function renderResults(userAnswers) {
+    const votes = getVotes();
+    const totalVoters = votes._total || 1;
+    const body = document.getElementById('resultsBody');
+    body.innerHTML = '';
+
+    questions.forEach((q, qi) => {
+      const qVotes = votes[q.key] || {};
+      const qTotal = Object.values(qVotes).reduce((a, b) => a + b, 0) || 1;
+      const userVal = userAnswers ? userAnswers[q.key] : null;
+
+      // Find winner
+      const maxCount = Math.max(...Object.values(qVotes));
+
+      const qEl = document.createElement('div');
+      qEl.className = 'result-question';
+
+      const titleEl = document.createElement('div');
+      titleEl.className = 'result-q-title';
+      titleEl.textContent = (qi + 1) + '. ' + q.label;
+      qEl.appendChild(titleEl);
+
+      const optsEl = document.createElement('div');
+      optsEl.className = 'result-options';
+
+      q.options.forEach(opt => {
+        const count = qVotes[opt.value] || 0;
+        const pct = Math.round((count / qTotal) * 100);
+        const isVoted = userVal === opt.value;
+        const isWinner = count === maxCount && count > 0;
+
+        const optEl = document.createElement('div');
+        optEl.className = 'result-option' + (isVoted ? ' is-voted' : '');
+
+        optEl.innerHTML = `
+          <div class="result-option-top">
+            <span class="result-option-label">${opt.label}</span>
+            <span class="result-option-count">${count} голос${count === 1 ? '' : count < 5 ? 'а' : 'ов'} · ${pct}%</span>
+          </div>
+          <div class="result-bar-bg">
+            <div class="result-bar ${isWinner ? 'winner' : ''}" data-pct="${pct}"></div>
+          </div>
+        `;
+        optsEl.appendChild(optEl);
+      });
+
+      qEl.appendChild(optsEl);
+
+      if (qi < questions.length - 1) {
+        const sep = document.createElement('div');
+        sep.className = 'vote-separator';
+        qEl.appendChild(sep);
+      }
+
+      body.appendChild(qEl);
+    });
+
+    const totalEl = document.createElement('div');
+    totalEl.className = 'vote-total';
+    totalEl.textContent = 'Всего проголосовало: ' + totalVoters;
+    body.appendChild(totalEl);
+
+    // Show results panel
+    const form = document.getElementById('voteForm');
+    const results = document.getElementById('voteResults');
+    form.style.display = 'none';
+    results.classList.add('visible');
+
+    // Animate bars after paint
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        results.querySelectorAll('.result-bar').forEach(bar => {
+          bar.style.width = bar.dataset.pct + '%';
+        });
+      });
+    });
+  }
+
+  // Init: if already voted, show results immediately
+  if (hasVoted()) {
+    renderResults(null);
+  }
+
+  // Submit handler
+  document.getElementById('voteSubmit').addEventListener('click', () => {
+    const errorEl = document.getElementById('voteError');
+    const answers = {};
+    let valid = true;
+
+    questions.forEach(q => {
+      const checked = document.querySelector(`input[name="${q.key}"]:checked`);
+      if (!checked) {
+        valid = false;
+      } else {
+        answers[q.key] = checked.value;
+      }
+    });
+
+    if (!valid) {
+      errorEl.classList.add('visible');
+      return;
+    }
+
+    errorEl.classList.remove('visible');
+
+    // Record vote
+    const votes = getVotes();
+    votes._total = (votes._total || 0) + 1;
+    questions.forEach(q => {
+      if (!votes[q.key]) votes[q.key] = {};
+      const val = answers[q.key];
+      votes[q.key][val] = (votes[q.key][val] || 0) + 1;
+    });
+    saveVotes(votes);
+    localStorage.setItem(VOTED_KEY, '1');
+
+    renderResults(answers);
+  });
+})();
+</script>
+
+</body>
+</html>
