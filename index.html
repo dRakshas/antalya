@@ -182,6 +182,78 @@
       transition:filter .3s;
     }
     .card:hover .card-photo { filter:brightness(1.08); }
+
+    /* ── Photo Carousel ── */
+    .card-carousel {
+      position: relative;
+      height: 190px;
+      flex-shrink: 0;
+      overflow: hidden;
+      background: var(--bg3);
+    }
+    .carousel-slides {
+      display: flex;
+      height: 100%;
+      transition: transform .45s cubic-bezier(.4,0,.2,1);
+    }
+    .carousel-slide {
+      min-width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-color: var(--bg3);
+    }
+    .carousel-slide::after {
+      content:'';position:absolute;inset:0;
+      background:linear-gradient(to bottom,rgba(10,15,24,0) 40%,rgba(10,15,24,.65) 100%);
+    }
+    .card-photo-badge {
+      position:absolute;top:12px;right:12px;z-index:3;
+      font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+      padding:4px 10px;border-radius:20px;
+      backdrop-filter:blur(8px);
+    }
+    .carousel-dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 5px;
+      z-index: 3;
+    }
+    .carousel-dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.4);
+      cursor: pointer;
+      transition: background .2s, transform .2s;
+    }
+    .carousel-dot.active {
+      background: var(--gold);
+      transform: scale(1.3);
+    }
+    .carousel-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 3;
+      width: 28px; height: 28px;
+      background: rgba(10,15,24,.6);
+      border: none;
+      border-radius: 50%;
+      color: rgba(255,255,255,.8);
+      font-size: 12px;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0;
+      transition: opacity .2s;
+    }
+    .card-carousel:hover .carousel-nav { opacity: 1; }
+    .carousel-nav.prev { left: 8px; }
+    .carousel-nav.next { right: 8px; }
+    .card:hover .card-carousel .carousel-slide { filter: brightness(1.08); }
+
     .card-photo::after {
       content:'';position:absolute;inset:0;
       background:linear-gradient(to bottom,rgba(10,15,24,0) 40%,rgba(10,15,24,.65) 100%);
@@ -485,9 +557,25 @@
       <div class="cards-grid">
 
         <div class="card reveal delay-1" data-id="konyaalti" data-section="Море и пляжи">
-          <div class="card-photo" style="background-image:url('images/konyaalti.jpg')">
-            <span class="card-photo-badge badge-must">Must</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/7/73/Falezlerden_Antalya_Konyaalt%C4%B1_Plaj%C4%B1na_do%C4%9Fru_bir_g%C3%B6r%C3%BCn%C3%BCm.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/2/2d/Konyaalt%C4%B1_Plaj%C4%B1_-_panoramio.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/4/44/View_of_Konyaalt%C4%B1_Beach_and_Beyda%C4%9Flar%C4%B1_Mountains%2C_Antalya.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/e/ec/Konyaalt%C4%B1_Plaj%C4%B1_2025.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/7/77/Konyaalt%C4%B1_Plaj%C4%B1.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-must">Must</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">🏖️</span><div class="card-name">Konyaaltı Beach</div></div>
             <div class="card-desc">Городской галечный пляж, удобен в первый день. Горы Тавр прямо с воды — без resort-формата и туристических толп.</div>
@@ -499,9 +587,21 @@
         </div>
 
         <div class="card reveal delay-2" data-id="cirali" data-section="Море и пляжи">
-          <div class="card-photo" style="background-image:url('images/cirali.jpg')">
-            <span class="card-photo-badge badge-must">Must</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/2/2a/Cirali-olympos-theme-photo.JPG')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/4/44/CiraliMeczet.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/3/3c/%C3%87%C4%B1ral%C4%B1%2C_Kemer_cropped.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-must">Must</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">🐢</span><div class="card-name">Çıralı Beach</div></div>
             <div class="card-desc">Дикий 3-километровый пляж среди сосновых лесов. Черепахи Caretta caretta. Лучший пляж западнее Антальи — тихо и атмосферно.</div>
@@ -513,9 +613,21 @@
         </div>
 
         <div class="card reveal delay-3" data-id="adrasan" data-section="Море и пляжи">
-          <div class="card-photo" style="background-image:url('images/adrasan.jpg')">
-            <span class="card-photo-badge badge-must">Must</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Adrasan_Suluada.jpg/1280px-Adrasan_Suluada.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/5/5d/Adrasan_koyu.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Adrasan_Suluada_Drone.jpg/1280px-Adrasan_Suluada_Drone.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-must">Must</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">🌊</span><div class="card-name">Adrasan Bay</div></div>
             <div class="card-desc">Закрытая бухта, кристальная вода, почти нет инфраструктуры. Работает только в связке с Çıralı — одна база на двоих.</div>
@@ -527,9 +639,21 @@
         </div>
 
         <div class="card reveal delay-4" data-id="maden" data-section="Море и пляжи">
-          <div class="card-photo" style="background-image:url('images/maden.jpg')">
-            <span class="card-photo-badge badge-must">Must</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/1/1e/A_street_in_Tekirova.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/4/41/Agora_%C3%96n%C3%BC..._-_panoramio.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/0/06/Cennet_koyu_Tekirova.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-must">Must</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">⛵</span><div class="card-name">Maden Bay (Tekirova)</div></div>
             <div class="card-desc">Скрытая бухта у подножья горы. Добираться только на лодке или сложной тропой. Реально worth it.</div>
@@ -541,9 +665,25 @@
         </div>
 
         <div class="card reveal delay-5" data-id="phaselis" data-section="Море и пляжи">
-          <div class="card-photo" style="background-image:url('images/phaselis.jpg')">
-            <span class="card-photo-badge badge-must">Must</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/5/54/Phaselis_Aqueduct_5267.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/f/f3/Phaselis_Big_Bath_4735.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/2/21/Phaselis_Big_Bath_5284.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/2/26/Phaselis_City_Harbour_4761.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/b/b4/Phaselis_Decoration_near_Hadrian%27s_Gate_4744.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-must">Must</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">🏛️</span><div class="card-name">Phaselis</div></div>
             <div class="card-desc">Античный город прямо у трёх бухт. Уникальное сочетание: руины + плавание. Один из сильнейших объектов в регионе.</div>
@@ -562,9 +702,19 @@
       <div class="cards-grid">
 
         <div class="card reveal delay-1" data-id="suluada" data-section="Море и пляжи">
-          <div class="card-photo" style="background-image:url('images/suluada.jpg')">
-            <span class="card-photo-badge badge-strong">Strong</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/7/7f/Adrasan_Suluada.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Adrasan_Suluada_Drone.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-strong">Strong</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">🏝️</span><div class="card-name">Suluada</div></div>
             <div class="card-desc">Boat trip к острову с белыми скалами и бирюзовой водой. Визуально мощно, но зависит от погоды и числа лодок в тот день.</div>
@@ -576,9 +726,19 @@
         </div>
 
         <div class="card reveal delay-2" data-id="kemer" data-section="Море и пляжи">
-          <div class="card-photo" style="background-image:url('images/kemer.jpg')">
-            <span class="card-photo-badge badge-strong">Strong</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/d/de/Kemer_beach%2C_Antalya.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/4/43/Kemer_from_a_height_of_310_meters.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-strong">Strong</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">⚓</span><div class="card-name">Kemer</div></div>
             <div class="card-desc">Курортный городок с мариной. Сам по себе не цель — хорош как логистический хаб для западных точек.</div>
@@ -612,9 +772,25 @@
       <div class="cards-grid">
 
         <div class="card reveal delay-1" data-id="termessos" data-section="История и природа">
-          <div class="card-photo" style="background-image:url('images/termessos.jpg')">
-            <span class="card-photo-badge badge-must">Must</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/8/8c/Termessos_-_Rock_Tombs.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/e/e9/Termessos_-_Theater.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/4/4c/Termessos_3736.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/f/f9/Termessos_Alcetas_grave_7223.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/2/21/Termessos_Alcetas_grave_7230.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-must">Must</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">🏔️</span><div class="card-name">Termessos</div></div>
             <div class="card-desc">Древний город на 1050 м, который не завоевал Александр Македонский. Амфитеатр с панорамой Тавра — лучший вид в регионе.</div>
@@ -626,9 +802,25 @@
         </div>
 
         <div class="card reveal delay-2" data-id="aspendos" data-section="История и природа">
-          <div class="card-photo" style="background-image:url('images/aspendos.jpg')">
-            <span class="card-photo-badge badge-must">Must</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/a/a4/Aspendos_Aqueduct_3313.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/9/91/Aspendos_Basilica_4728.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/6/61/Aspendos_Market_Hall_7349.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/5/55/Aspendos_Nymphaeum_4707.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Aspendos_Ornamental_Gate_4726.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-must">Must</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">🎭</span><div class="card-name">Aspendos</div></div>
             <div class="card-desc">Лучший сохранившийся римский театр в мире. Реально впечатляет вживую — и не переоценён.</div>
@@ -640,9 +832,21 @@
         </div>
 
         <div class="card reveal delay-3" data-id="side" data-section="История и природа">
-          <div class="card-photo" style="background-image:url('images/side.jpg')">
-            <span class="card-photo-badge badge-must">Must</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/d/da/Side_Ancient_City.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/8/87/Agora_of_Side_-_Antalya_Province%2C_Turkey_-_12_June_2015.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/1/1f/Roman_theatre_-_Side_-_Antalya_Province%2C_Turkey_-_8_June_2015.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-must">Must</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">🌅</span><div class="card-name">Side Ancient City</div></div>
             <div class="card-desc">Античный город прямо в жилом квартале. Храм Аполлона у моря на закате — одна из самых фотогеничных точек.</div>
@@ -654,9 +858,25 @@
         </div>
 
         <div class="card reveal delay-4" data-id="kaleici" data-section="История и природа">
-          <div class="card-photo" style="background-image:url('images/kaleici.jpg')">
-            <span class="card-photo-badge badge-must">Must</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/1/10/2023-01-17_Hadrian%27s_Gate_in_Antalya_1.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/3/36/2023-01-17_Old_Town%2C_Antalya_10.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/8/88/2023-01-17_Old_Town%2C_Antalya_11.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/e/e5/2023-01-17_Old_Town%2C_Antalya_15.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/6/6c/2023-01-17_Old_Town%2C_Antalya_25.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-must">Must</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">🕌</span><div class="card-name">Kaleiçi</div></div>
             <div class="card-desc">Старый город Антальи — в первый или последний день. Венецианская гавань, узкие улочки, башня Хыдырлык.</div>
@@ -668,9 +888,23 @@
         </div>
 
         <div class="card reveal delay-5" data-id="yanartas" data-section="История и природа">
-          <div class="card-photo" style="background-image:url('images/yanartas.jpg')">
-            <span class="card-photo-badge badge-must">Must</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/1/1f/Chimaera_%287023446981%29.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/6/65/Chimaera_%286877346128%29.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/1/1d/Chimaera_%286877346856%29.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/7/7e/Chimaera_%287023446805%29.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-must">Must</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">🔥</span><div class="card-name">Yanartaş (Chimera)</div></div>
             <div class="card-desc">Вечные огни из трещин в скалах. Подъём 20 минут, лучше после заката. Единственное такое место в регионе.</div>
@@ -682,9 +916,19 @@
         </div>
 
         <div class="card reveal delay-1" data-id="goynuk" data-section="История и природа">
-          <div class="card-photo" style="background-image:url('images/goynuk.jpg')">
-            <span class="card-photo-badge badge-must">Must</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/6/6b/G%C3%B6yn%C3%BCk_Kanyon_-_panoramio_%2828%29.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/8/8d/G%C3%B6yn%C3%BCk_-_panoramio_-_fatihset.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-must">Must</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">💧</span><div class="card-name">Göynük Canyon</div></div>
             <div class="card-desc">Каньон с бирюзовой водой — можно плыть по ущелью. Физически несложно, визуально сильно. Прямо рядом с Кемером.</div>
@@ -703,9 +947,23 @@
       <div class="cards-grid">
 
         <div class="card reveal delay-1" data-id="olympos" data-section="История и природа">
-          <div class="card-photo" style="background-image:url('images/olympos.jpg')">
-            <span class="card-photo-badge badge-strong">Strong</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/f/f4/Beach_at_Olympos_and_%C3%87%C4%B1ral%C4%B1._Antalya_province%2C_Turkey_-_panoramio.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/a/af/%C3%87%C4%B1ral%C4%B1_-OLYMPOS_-Antalya-Turkey_-_panoramio.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/d/d2/Olympos_beach_Antalya.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/2/26/Mount_Tahtal%C4%B1_Viewed_From_Olympos_Beach.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-strong">Strong</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">🌿</span><div class="card-name">Olympos Ancient City</div></div>
             <div class="card-desc">Руины в лесу прямо у пляжа. Атмосферное место, но слабее Phaselis по концентрации впечатлений.</div>
@@ -717,9 +975,25 @@
         </div>
 
         <div class="card reveal delay-2" data-id="myra" data-section="История и природа">
-          <div class="card-photo" style="background-image:url('images/myra.jpg')">
-            <span class="card-photo-badge badge-strong">Strong</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/b/b2/Carved_theatrical_mask_Myra_%2832387362710%29.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/c/c3/Grab_Nikolaus.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/8/8f/Lycia-turkey-ancient.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/e/e7/Mira_divadlo_2_-_panoramio.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/4/47/Myra_Medusa.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-strong">Strong</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">⛰️</span><div class="card-name">Myra / Demre</div></div>
             <div class="card-desc">Ликийские гробницы в скалах + церковь Св. Николая. Дальняя точка (~150 км) — только если делать большой западный маршрут.</div>
@@ -731,9 +1005,23 @@
         </div>
 
         <div class="card reveal delay-3" data-id="perge" data-section="История и природа">
-          <div class="card-photo" style="background-image:url('images/perge.jpg')">
-            <span class="card-photo-badge badge-strong">Strong</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/6/6b/2007_0215TurkeyThursdayA0034_%283281734687%29.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/7/7c/2007_0215TurkeyThursdayA0113_%283282567570%29.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/b/bf/2007_0215TurkeyThursdayA0132_%283281748863%29.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/9/97/2007_0215TurkeyThursdayA0142_%283281749489%29.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-strong">Strong</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">🏟️</span><div class="card-name">Perge</div></div>
             <div class="card-desc">Большой античный город восточнее Антальи. Менее известен чем Aspendos, но масштабнее. Хорошо сочетается с Aspendos в один день.</div>
@@ -745,9 +1033,19 @@
         </div>
 
         <div class="card reveal delay-4" data-id="duden" data-section="История и природа">
-          <div class="card-photo" style="background-image:url('images/duden.jpg')">
-            <span class="card-photo-badge badge-strong">Strong</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/2/2c/Antalya%2C_Turkey_-_panoramio_%2855%29.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/d/df/D%C3%BCdenWaterfalls18.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-strong">Strong</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">🌊</span><div class="card-name">Lower Düden Waterfall</div></div>
             <div class="card-desc">Водопад прямо в море у Lara. Красиво с лодки, с берега скромнее.</div>
@@ -759,9 +1057,21 @@
         </div>
 
         <div class="card reveal delay-5" data-id="kursunlu" data-section="История и природа">
-          <div class="card-photo" style="background-image:url('images/kursunlu.jpg')">
-            <span class="card-photo-badge badge-strong">Strong</span>
+        <div class="card-carousel">
+          <div class="carousel-slides">
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/7/7d/Kunsurlu_waterfal_-_panoramio.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Kursunlu_-_in_the_forest_-_panoramio.jpg')"></div>
+          <div class="carousel-slide" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/3/3f/Kursunlu_waterfall_-_panoramio.jpg')"></div>
           </div>
+          <span class="card-photo-badge badge-strong">Strong</span>
+          <button class="carousel-nav prev" aria-label="Назад">‹</button>
+          <button class="carousel-nav next" aria-label="Вперёд">›</button>
+          <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          </div>
+        </div>
           <div class="card-body">
             <div class="card-header"><span class="card-icon">🌳</span><div class="card-name">Kurşunlu Waterfall</div></div>
             <div class="card-desc">Природный парк с каскадами. Прохладно, зелено — хорошо после жарких дней. Не must, но приятно.</div>
@@ -1060,6 +1370,48 @@
     });
   });
 })();
+
+  // ── Photo Carousels ──
+  document.querySelectorAll('.card-carousel').forEach(function(carousel) {
+    var slides = carousel.querySelectorAll('.carousel-slide');
+    if (slides.length <= 1) return;
+    var dots = carousel.querySelectorAll('.carousel-dot');
+    var idx = 0;
+    var track = carousel.querySelector('.carousel-slides');
+    var timer;
+
+    function go(n) {
+      idx = (n + slides.length) % slides.length;
+      track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+      dots.forEach(function(d, i) { d.classList.toggle('active', i === idx); });
+    }
+
+    function start() { timer = setInterval(function() { go(idx + 1); }, 4000); }
+    function stop() { clearInterval(timer); }
+
+    carousel.querySelector('.carousel-nav.prev').addEventListener('click', function(e) {
+      e.stopPropagation(); stop(); go(idx - 1); start();
+    });
+    carousel.querySelector('.carousel-nav.next').addEventListener('click', function(e) {
+      e.stopPropagation(); stop(); go(idx + 1); start();
+    });
+    dots.forEach(function(d, i) {
+      d.addEventListener('click', function(e) { e.stopPropagation(); stop(); go(i); start(); });
+    });
+
+    var startX = 0;
+    carousel.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; }, {passive:true});
+    carousel.addEventListener('touchend', function(e) {
+      var dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 40) { stop(); go(idx + (dx < 0 ? 1 : -1)); start(); }
+    }, {passive:true});
+
+    go(0);
+    start();
+    carousel.addEventListener('mouseenter', stop);
+    carousel.addEventListener('mouseleave', start);
+  });
+
 </script>
 
 </body>
