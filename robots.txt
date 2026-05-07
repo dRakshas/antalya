@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drakshas.github.io/antalya/sitemap.xml

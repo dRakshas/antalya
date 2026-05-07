@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>18 мест Антальи — персональный путеводитель</title>
+  <meta name="description" content="Персональный путеводитель по 18 лучшим местам Антальи: пляжи, античные города, каньоны, водопады." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://drakshas.github.io/antalya/" />
+  <meta property="og:title" content="18 мест Антальи" />
+  <meta property="og:description" content="Персональный путеводитель по 18 лучшим местам Антальи." />
+  <meta property="og:image" content="https://drakshas.github.io/antalya/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://drakshas.github.io/antalya/" />
+  <link rel="preload" href="fonts/Fraunces.var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <nav class="site-nav" aria-label="Основная навигация">
+      <span class="site-nav__logo">Анталья 18</span>
+      <button class="theme-toggle" aria-label="Переключить тему" type="button"></button>
+      <a class="site-nav__list-link" href="#my-list">Мой список (<span id="nav-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero__bg">
+        <source srcset="img/hero/panorama.avif" type="image/avif" />
+        <img src="img/hero/panorama.webp" alt="Панорама Антальи — берег Средиземного моря" width="2400" height="1200" fetchpriority="high" decoding="sync" />
+      </picture>
+      <div class="hero__content">
+        <h1 id="hero-title" class="hero__title">18 мест Антальи</h1>
+        <p class="hero__subtitle">Пляжи, каньоны, античные города и укромные бухты — собери список мест, куда хочешь попасть.</p>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true"></div>
+    </section>
+
+    <section class="intro" aria-label="О подборке">
+      <div class="container">
+        <p class="intro__text">18 мест в радиусе 200 км от Антальи. Жми «Хочу сюда» на тех, что зацепили — соберём список, его можно скопировать и взять с собой.</p>
+      </div>
+    </section>
+
+    <section class="places" aria-labelledby="places-title">
+      <div class="container">
+        <h2 id="places-title" class="places__title">Места</h2>
+        <div class="places__filters" role="group" aria-label="Фильтр по категориям"></div>
+        <div class="places__grid" id="places-grid"></div>
+      </div>
+    </section>
+
+    <section class="my-list" id="my-list" aria-labelledby="my-list-title">
+      <div class="container">
+        <h2 id="my-list-title" class="my-list__title">Мой список</h2>
+        <div class="my-list__content" id="my-list-content"></div>
+        <div class="my-list__actions" id="my-list-actions" hidden>
+          <button type="button" class="btn btn--outline" id="btn-copy">Скопировать список</button>
+          <button type="button" class="btn btn--outline" id="btn-share">Поделиться</button>
+          <button type="button" class="btn btn--ghost" id="btn-clear">Очистить список</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Сделано с любовью к Анталье. Фотографии — Wikimedia Commons и другие открытые источники. <a href="ATTRIBUTIONS.md">Все источники</a>.</p>
+      <p><a href="https://github.com/dRakshas/antalya">Исходный код</a> — MIT License</p>
+    </div>
+  </footer>
+
+  <div class="sticky-bar" id="sticky-bar" role="region" aria-label="Мой список" hidden>
+    <div class="sticky-bar__inner container">
+      <span class="sticky-bar__counter" aria-live="polite"><span id="sticky-count">0</span> мест</span>
+      <div class="sticky-bar__actions">
+        <a href="#my-list" class="btn btn--outline btn--sm">Открыть список</a>
+        <button type="button" class="sticky-bar__close" aria-label="Скрыть панель">×</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
