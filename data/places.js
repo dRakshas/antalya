@@ -7,11 +7,11 @@ export const PLACES = [
     coords: [36.8556, 30.6364],
     description: '7-километровый городской пляж у подножия Тавра. Галька, бирюзовая вода, променад с кафе и широкая видовая полоса в сторону гор Бейдаглары. Самый удобный пляж, чтобы попасть к морю прямо из города.',
     photos: [
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/a/af/Konyaalt%C4%B1_Beach_and_cliffs.jpg', alt: 'Пляж Коньяалты и скалы' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/6/61/Konyaalt%C4%B1_2025.jpg', alt: 'Коньяалты 2025' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/2/27/Antalya%2C_Turkey_Beaches.JPG', alt: 'Пляжи Антальи, Турция' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/4/44/View_of_Konyaalt%C4%B1_Beach_and_Beyda%C4%9Flar%C4%B1_Mountains%2C_Antalya.jpg', alt: 'Коньяалты с видом на горы Бейдаглары' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/e/e7/Pla%C5%BEa_Konyaalt%C4%B1_ljeti.jpg', alt: 'Пляж Коньяалты летом' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/a/af/Konyaalt%C4%B1_Beach_and_cliffs.jpg', alt: 'Пляж Коньяалты и скалы' , local: 'img/places/konyaalti/Konyaaltı_Beach_and_cliffs' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/6/61/Konyaalt%C4%B1_2025.jpg', alt: 'Коньяалты 2025' , local: 'img/places/konyaalti/Konyaaltı_2025' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/2/27/Antalya%2C_Turkey_Beaches.JPG', alt: 'Пляжи Антальи, Турция' , local: 'img/places/konyaalti/Antalya,_Turkey_Beaches' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/4/44/View_of_Konyaalt%C4%B1_Beach_and_Beyda%C4%9Flar%C4%B1_Mountains%2C_Antalya.jpg', alt: 'Коньяалты с видом на горы Бейдаглары' , local: 'img/places/konyaalti/View_of_Konyaaltı_Beach_and_Beydağları_Mountains,_Antalya' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/e/e7/Pla%C5%BEa_Konyaalt%C4%B1_ljeti.jpg', alt: 'Пляж Коньяалты летом' , local: 'img/places/konyaalti/Plaža_Konyaaltı_ljeti' },
     ],
   },
   {
@@ -22,11 +22,11 @@ export const PLACES = [
     coords: [36.4148, 30.4756],
     description: 'Тихий посёлок без больших отелей, длинный галечно-песчаный пляж у самой границы леса. С мая по октябрь черепахи Caretta caretta откладывают яйца — пляж охраняется. Рядом Янарташ и руины Олимпоса.',
     photos: [
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/%C3%87%C4%B1ral%C4%B1_Plaj%C4%B1.jpg', alt: 'Пляж Чиралы' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/d/dd/%C3%87%C4%B1ral%C4%B1_beach_2021-11-14-1.jpg', alt: 'Чиралы 2021' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Cirali_beach_Antalya_province.jpg', alt: 'Пляж Чиралы, провинция Анталья' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Lykien_Cirali_Strand.jpg', alt: 'Ликийский берег Чиралы' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/f/fc/%C3%87%C4%B1ral%C4%B1_in_2013_4070.jpg', alt: 'Чиралы 2013' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/%C3%87%C4%B1ral%C4%B1_Plaj%C4%B1.jpg', alt: 'Пляж Чиралы' , local: 'img/places/cirali/Çıralı_Plajı' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/d/dd/%C3%87%C4%B1ral%C4%B1_beach_2021-11-14-1.jpg', alt: 'Чиралы 2021' , local: 'img/places/cirali/Çıralı_beach_2021-11-14-1' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Cirali_beach_Antalya_province.jpg', alt: 'Пляж Чиралы, провинция Анталья' , local: 'img/places/cirali/Cirali_beach_Antalya_province' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Lykien_Cirali_Strand.jpg', alt: 'Ликийский берег Чиралы' , local: 'img/places/cirali/Lykien_Cirali_Strand' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/f/fc/%C3%87%C4%B1ral%C4%B1_in_2013_4070.jpg', alt: 'Чиралы 2013' , local: 'img/places/cirali/Çıralı_in_2013_4070' },
     ],
   },
   {
@@ -37,7 +37,7 @@ export const PLACES = [
     coords: [36.3097, 30.4869],
     description: 'Тихая бухта в сосновом лесу, песок-галька, спокойное море. Отсюда уходят катера на Сулуаду. Атмосфера деревенская: дешёвые рыбные таверны и редкие пансионы без шума.',
     photos: [
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Adrasan_koyu.jpg', alt: 'Бухта Адрасан' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Adrasan_koyu.jpg', alt: 'Бухта Адрасан' , local: 'img/places/adrasan/Adrasan_koyu' },
     ],
   },
   {
@@ -48,10 +48,10 @@ export const PLACES = [
     coords: [36.4869, 30.5211],
     description: 'Скрытая скалистая бухта рядом с Текировой, добираются на лодках или внедорожниках. Чистая бирюзовая вода, чёрно-белая галька, минимум инфраструктуры — классическое дикое Средиземноморье.',
     photos: [
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Tekirova%2C_Turkey_from_above.jpg', alt: 'Текирова с воздуха' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/7/7f/Tekirova_-_panoramio.jpg', alt: 'Текирова' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/a/a2/Uzun_Plaj..._-_panoramio.jpg', alt: 'Длинный пляж, Текирова' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/A_street_in_Tekirova.jpg', alt: 'Улица в Текирове' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Tekirova%2C_Turkey_from_above.jpg', alt: 'Текирова с воздуха' , local: 'img/places/maden/Tekirova,_Turkey_from_above' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/7/7f/Tekirova_-_panoramio.jpg', alt: 'Текирова' , local: 'img/places/maden/Tekirova_-_panoramio' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/a/a2/Uzun_Plaj..._-_panoramio.jpg', alt: 'Длинный пляж, Текирова' , local: 'img/places/maden/Uzun_Plaj..._-_panoramio' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/A_street_in_Tekirova.jpg', alt: 'Улица в Текирове' , local: 'img/places/maden/A_street_in_Tekirova' },
     ],
   },
   {
@@ -62,10 +62,11 @@ export const PLACES = [
     coords: [36.5230, 30.5511],
     description: 'Древний ликийский город прямо у трёх бухт. Руины акведука, термов и агоры — а потом купаться там, где причаливали корабли Александра Македонского.',
     photos: [
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/d/d2/Phaselis_axb01.jpg', alt: 'Фазелис, общий вид' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/e/ed/Phaselis_Agora.JPG', alt: 'Агора Фазелиса' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/0/0c/Phaselis_August_2019_02.jpg', alt: 'Фазелис, август 2019' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/1/14/Phaselis_August_2019_08.jpg', alt: 'Гавань Фазелиса, август 2019' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/d/d2/Phaselis_axb01.jpg', alt: 'Фазелис, общий вид' , local: 'img/places/phaselis/Phaselis_axb01' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/e/ed/Phaselis_Agora.JPG', alt: 'Агора Фазелиса' , local: 'img/places/phaselis/Phaselis_Agora' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/0/0c/Phaselis_August_2019_02.jpg', alt: 'Фазелис, август 2019' , local: 'img/places/phaselis/Phaselis_August_2019_02' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/1/14/Phaselis_August_2019_08.jpg', alt: 'Гавань Фазелиса, август 2019' , local: 'img/places/phaselis/Phaselis_August_2019_08' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/c/c9/Phaselis_bay_2.JPG', alt: 'Бухта Фазелиса' },
     ],
   },
   {
@@ -76,8 +77,8 @@ export const PLACES = [
     coords: [36.2592, 30.4197],
     description: 'Маленький необитаемый остров напротив Адрасана. Прозрачная вода с тропическими градиентами, белый песок — отсюда прозвище «Maldives of Turkey». Добираются только на лодочных турах.',
     photos: [
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Adrasan_Suluada_Drone.jpg', alt: 'Сулуада с дрона' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/7/7f/Adrasan_Suluada.jpg', alt: 'Сулуада, вид с воды' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Adrasan_Suluada_Drone.jpg', alt: 'Сулуада с дрона' , local: 'img/places/suluada/Adrasan_Suluada_Drone' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/7/7f/Adrasan_Suluada.jpg', alt: 'Сулуада, вид с воды' , local: 'img/places/suluada/Adrasan_Suluada' },
     ],
   },
   {
@@ -88,11 +89,11 @@ export const PLACES = [
     coords: [36.6028, 30.5603],
     description: 'Курортный городок в 40 км от Антальи, сосновые горы спускаются прямо к морю. Длинный променад, марина с яхтами, маяк. Удобная база для радиальных поездок к Олимпосу, Чиралы, каньону Гёйнюк.',
     photos: [
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/8/80/Kemer_Antalya_T%C3%9CRK%C4%B0YE_-_panoramio_%2811%29.jpg', alt: 'Кемер, Анталья' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/4/40/Kemer_Marina_-_panoramio.jpg', alt: 'Марина Кемера' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/7/79/Kemer_Lighthouse_-_panoramio.jpg', alt: 'Маяк Кемера' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Kemer_Beach_-_panoramio.jpg', alt: 'Пляж Кемера' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Kemer_-_panoramio_%282%29.jpg', alt: 'Кемер' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/8/80/Kemer_Antalya_T%C3%9CRK%C4%B0YE_-_panoramio_%2811%29.jpg', alt: 'Кемер, Анталья' , local: 'img/places/kemer/Kemer_Antalya_TÜRKİYE_-_panoramio_(11)' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/4/40/Kemer_Marina_-_panoramio.jpg', alt: 'Марина Кемера' , local: 'img/places/kemer/Kemer_Marina_-_panoramio' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/7/79/Kemer_Lighthouse_-_panoramio.jpg', alt: 'Маяк Кемера' , local: 'img/places/kemer/Kemer_Lighthouse_-_panoramio' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Kemer_Beach_-_panoramio.jpg', alt: 'Пляж Кемера' , local: 'img/places/kemer/Kemer_Beach_-_panoramio' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Kemer_-_panoramio_%282%29.jpg', alt: 'Кемер' , local: 'img/places/kemer/Kemer_-_panoramio_(2)' },
     ],
   },
   {
@@ -103,11 +104,11 @@ export const PLACES = [
     coords: [36.9833, 30.4647],
     description: 'Орлиное гнездо на высоте 1000 м. Город, который Александр не смог взять штурмом. Театр на склоне с видом на море, мощный некрополь и нетронутые саркофаги среди соснового леса.',
     photos: [
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/e/e9/Termessos_-_Theater.jpg', alt: 'Театр Термессоса' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Termessos_Agora_3640_panorama.jpg', alt: 'Агора Термессоса, панорама' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/e/e9/Termessos_-_Theater.jpg', alt: 'Театр Термессоса' , local: 'img/places/termessos/Termessos_-_Theater' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Termessos_Agora_3640_panorama.jpg', alt: 'Агора Термессоса, панорама' , local: 'img/places/termessos/Termessos_Agora_3640_panorama' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/e/e6/Termessos_unidentified_building_3627.jpg', alt: 'Руины Термессоса' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Antick%C3%A9_m%C4%9Bsto_Thermessos_-_panoramio.jpg', alt: 'Термессос, панорама' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/6/60/E._T._Daniell_-_Termessus%2C_looking_SE.jpg', alt: 'Термессос, исторический вид (Public Domain)' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/6/60/E._T._Daniell_-_Termessus%2C_looking_SE.jpg', alt: 'Термессос, исторический вид (Public Domain)' , local: 'img/places/termessos/E._T._Daniell_-_Termessus,_looking_SE' },
     ],
   },
   {
@@ -120,7 +121,7 @@ export const PLACES = [
     photos: [
       { src: 'https://upload.wikimedia.org/wikipedia/commons/6/60/Aspendos_Amphitheatre.jpg', alt: 'Амфитеатр Аспендоса' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Antalya%27daki_Aspendos_Antik_Tiyatrosu%27nun_i%C3%A7ten_foto%C4%9Fraf%C4%B1..jpg', alt: 'Театр Аспендоса изнутри' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/4/41/Orchestra_at_down.jpg', alt: 'Оркестра театра на рассвете' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/4/41/Orchestra_at_down.jpg', alt: 'Оркестра театра на рассвете' , local: 'img/places/aspendos/Orchestra_at_down' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/f/f0/Turkey-2330_%282217047016%29_%282%29.jpg', alt: 'Аспендос, Турция' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/7/7f/Turkey-2331_%282216254715%29_%282%29.jpg', alt: 'Аспендос, детали' },
     ],
@@ -133,11 +134,11 @@ export const PLACES = [
     coords: [36.7686, 31.3892],
     description: 'Античный город на полуострове: колонны храма Аполлона стоят прямо на закатном берегу. Классический открыточный кадр Турции и живая курортная жизнь — всё рядом.',
     photos: [
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Antalya_Side_Apollo.jpg', alt: 'Храм Аполлона в Сиде' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/%D0%90%D0%BD%D1%82%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%A1%D0%B8%D0%B4%D0%B5.JPG', alt: 'Античный Сиде' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/b/bc/Side_Panorama.jpg', alt: 'Панорама Сиде' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Antalya_Side_Apollo.jpg', alt: 'Храм Аполлона в Сиде' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/%D0%90%D0%BD%D1%82%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%A1%D0%B8%D0%B4%D0%B5.JPG', alt: 'Античный Сиде' , local: 'img/places/side/Античный_Сиде' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/b/bc/Side_Panorama.jpg', alt: 'Панорама Сиде' , local: 'img/places/side/Side_Panorama' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/6/62/2023-01-16_Side%2C_Turkey_5.jpg', alt: 'Сиде, 2023' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Side.Great_Gate%2802%29.jpg', alt: 'Большие ворота Сиде' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Side.Great_Gate%2802%29.jpg', alt: 'Большие ворота Сиде' , local: 'img/places/side/Side.Great_Gate(02)' },
     ],
   },
   {
@@ -149,10 +150,10 @@ export const PLACES = [
     description: 'Старый город внутри крепостных стен: узкие улочки, османские деревянные дома, римские ворота Адриана и древняя гавань. Самый атмосферный кусок Антальи — особенно после заката.',
     photos: [
       { src: 'https://upload.wikimedia.org/wikipedia/commons/7/73/20180111_AntalyaMarina_5295_%2828329832259%29.jpg', alt: 'Марина Антальи' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Antalya_-_Altstadtgasse.jpg', alt: 'Улица старого города Антальи' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Antalya_-_Altstadtgasse.jpg', alt: 'Улица старого города Антальи' , local: 'img/places/kaleici/Antalya_-_Altstadtgasse' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Kale_i%C3%A7i.jpg', alt: 'Калеичи, вид сверху' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Ve%C4%8Dern%C3%AD_uli%C4%8Dky_v_Kale%C4%8Di_-_panoramio.jpg', alt: 'Вечерние улочки Калеичи' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/2/28/Kalei%C3%A7i_old_town%2C_Antalya%2C_Turkey_-_window_view.jpg', alt: 'Старый город Калеичи' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/2/28/Kalei%C3%A7i_old_town%2C_Antalya%2C_Turkey_-_window_view.jpg', alt: 'Старый город Калеичи' , local: 'img/places/kaleici/Kaleiçi_old_town,_Antalya,_Turkey_-_window_view' },
     ],
   },
   {
@@ -182,7 +183,7 @@ export const PLACES = [
       { src: 'https://upload.wikimedia.org/wikipedia/commons/4/44/G%C3%B6yn%C3%BCk_Kanyon_-_panoramio_%2813%29.jpg', alt: 'Ущелье Гёйнюк' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/b/bf/G%C3%B6yn%C3%BCk_Kanyon_-_panoramio_%289%29.jpg', alt: 'Каньон Гёйнюк, вид снизу' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/3/36/2019_G%C3%B6yn%C3%BCk_Canyon_2.jpg', alt: 'Каньон Гёйнюк 2019' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/3/36/G%C3%B6yn%C3%BCk_Kanyon_-_panoramio_%281%29.jpg', alt: 'Вход в каньон Гёйнюк' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/3/36/G%C3%B6yn%C3%BCk_Kanyon_-_panoramio_%281%29.jpg', alt: 'Вход в каньон Гёйнюк' , local: 'img/places/goynuk/Göynük_Kanyon_-_panoramio_(1)' },
     ],
   },
   {
@@ -194,7 +195,7 @@ export const PLACES = [
     description: 'Руины ликийского города, заросшие лавром и плющом, в долине между двумя скалами. Дорожка вдоль ручья выводит к дикому пляжу — редкое сочетание античности и нетронутого моря.',
     photos: [
       { src: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Olympos_Antik_Kenti.jpg', alt: 'Античный Олимпос' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Olympos_Akropol%C3%BC.jpg', alt: 'Акрополь Олимпоса' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Olympos_Akropol%C3%BC.jpg', alt: 'Акрополь Олимпоса' , local: 'img/places/olympos/Olympos_Akropolü' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/c/c7/Olympos_Stadtmauer.JPG', alt: 'Городская стена Олимпоса' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Olympos%2C_Lycia%2C_Turkey_%289657201826%29.jpg', alt: 'Олимпос, Ликия' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/7/76/Olympos_Structures_near_entrance_2013_4068.jpg', alt: 'Сооружения у входа в Олимпос' },
@@ -210,7 +211,7 @@ export const PLACES = [
     photos: [
       { src: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Myra_Necropolis%2C_Lycia%2C_Turkey.jpg', alt: 'Некрополь Миры, Ликия' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/4/46/Myra_Hilltop_in_2012_7435.jpg', alt: 'Мира на холме, 2012' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Facade_of_Rock_Tomb_%28Myra%29.png', alt: 'Фасад скальной гробницы Миры' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Facade_of_Rock_Tomb_%28Myra%29.png', alt: 'Фасад скальной гробницы Миры' , local: 'img/places/myra/Facade_of_Rock_Tomb_(Myra)' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/d/df/Myra_Necropolis%2C_Lycia%2C_Turkey_-_52619521033.jpg', alt: 'Некрополь Миры, детали' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Segments_Of_the_Amphitheatre_Decoration_with_the_Necropolis_in_the_Back_Ground_at_Myra_Turkie.jpg', alt: 'Амфитеатр и некрополь Миры' },
     ],
@@ -238,7 +239,7 @@ export const PLACES = [
     description: 'Редкий случай — водопад падает прямо со скалы в Средиземное море, высота 40 м. Лучший вид с моря (с прогулочного катера) или со смотровой в парке Дюден.',
     photos: [
       { src: 'https://upload.wikimedia.org/wikipedia/commons/1/17/Lower_D%C3%BCden_Waterfall.jpg', alt: 'Нижний водопад Дюден' },
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/b/b4/Antalya%2C_Turkey_March_2022_-_D%C3%BCden_Park_-_Lower_D%C3%BCden_Waterfalls.jpg', alt: 'Парк Дюден, март 2022' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/b/b4/Antalya%2C_Turkey_March_2022_-_D%C3%BCden_Park_-_Lower_D%C3%BCden_Waterfalls.jpg', alt: 'Парк Дюден, март 2022' , local: 'img/places/duden/Antalya,_Turkey_March_2022_-_Düden_Park_-_Lower_Düden_Waterfalls' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/2/22/Antalya_waterfall_-_Antalya_-_2010_-_panoramio_%283%29.jpg', alt: 'Водопад Антальи 2010' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/5/59/D%C3%BCden_K%C4%B1y%C4%B1_%C5%9Eelalesi..._-_panoramio.jpg', alt: 'Дюден у берега моря' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/c/c4/Antalya._Lower_D%C3%BCden_Waterfall.jpg', alt: 'Нижний водопад Дюден, Анталья' },
@@ -252,7 +253,7 @@ export const PLACES = [
     coords: [36.9869, 30.8425],
     description: 'Водопад в природном парке: каскад среди сосен, тропинки вдоль ручья и небольших озёр. Много тени, прохлада, не такой раскрученный, как Дюден — хорошо ехать на полдня.',
     photos: [
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Kursunlu_Waterfall_1.jpg', alt: 'Водопад Куршунлу' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Kursunlu_Waterfall_1.jpg', alt: 'Водопад Куршунлу' , local: 'img/places/kursunlu/Kursunlu_Waterfall_1' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/3/38/Kursunlu_Waterfall_Autumn.jpg', alt: 'Куршунлу осенью' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Kur%C5%9Funlu_Waterfall_in_2013_3088_panorama.jpg', alt: 'Водопад Куршунлу, панорама' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/f/fb/Kursunlu_Waterfall_Cascade.jpg', alt: 'Каскад Куршунлу' },

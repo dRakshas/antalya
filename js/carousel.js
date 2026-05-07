@@ -67,12 +67,11 @@ function initOne(container) {
   slides.forEach(s => obs.observe(s));
 
   // Lazy-load images: trigger opacity transition after load
-  track.querySelectorAll('img[loading="lazy"]').forEach(img => {
-    if (img.complete) { img.classList.add('loaded'); return; }
+  track.querySelectorAll('img').forEach(img => {
+    if (img.complete && img.naturalWidth) { img.classList.add('loaded'); return; }
     img.addEventListener('load', () => img.classList.add('loaded'), { once: true });
+    img.addEventListener('error', () => img.classList.add('loaded'), { once: true });
   });
-  // Eager images also get .loaded
-  track.querySelectorAll('img:not([loading="lazy"])').forEach(img => img.classList.add('loaded'));
 
   sync();
 }

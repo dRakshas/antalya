@@ -1,0 +1,796 @@
+{
+  "places": [
+    {
+      "slug": "konyaalti",
+      "name": "Коньяалты",
+      "nameEn": "Konyaaltı Beach",
+      "category": "пляж",
+      "description": "7-километровый городской пляж у подножия Тавра. Галька, бирюзовая вода, променад с кафе и широкая видовая полоса в сторону гор Бейдаглары. Самый удобный пляж, чтобы попасть к морю прямо из города.",
+      "coords": [
+        36.8556,
+        30.6364
+      ],
+      "photos": [
+        {
+          "filename": "Konyaaltı_Beach_and_cliffs.jpg",
+          "alt": "Пляж Коньяалты и скалы",
+          "srcset": {
+            "avif": "img/places/konyaalti/Konyaaltı_Beach_and_cliffs-480w.avif 480w, img/places/konyaalti/Konyaaltı_Beach_and_cliffs-800w.avif 800w, img/places/konyaalti/Konyaaltı_Beach_and_cliffs-1280w.avif 1280w, img/places/konyaalti/Konyaaltı_Beach_and_cliffs-1920w.avif 1920w",
+            "webp": "img/places/konyaalti/Konyaaltı_Beach_and_cliffs-480w.webp 480w, img/places/konyaalti/Konyaaltı_Beach_and_cliffs-800w.webp 800w, img/places/konyaalti/Konyaaltı_Beach_and_cliffs-1280w.webp 1280w, img/places/konyaalti/Konyaaltı_Beach_and_cliffs-1920w.webp 1920w",
+            "jpeg": "img/places/konyaalti/Konyaaltı_Beach_and_cliffs-480w.jpg 480w, img/places/konyaalti/Konyaaltı_Beach_and_cliffs-800w.jpg 800w, img/places/konyaalti/Konyaaltı_Beach_and_cliffs-1280w.jpg 1280w, img/places/konyaalti/Konyaaltı_Beach_and_cliffs-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "konyaalti-Konyaaltı_Beach_and_cliffs",
+          "author": "MrEfeS",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Konyaalt%C4%B1_Beach_and_cliffs.jpg"
+        },
+        {
+          "filename": "Konyaaltı_2025.jpg",
+          "alt": "Коньяалты 2025",
+          "srcset": {
+            "avif": "img/places/konyaalti/Konyaaltı_2025-480w.avif 480w, img/places/konyaalti/Konyaaltı_2025-800w.avif 800w, img/places/konyaalti/Konyaaltı_2025-1280w.avif 1280w, img/places/konyaalti/Konyaaltı_2025-1920w.avif 1920w",
+            "webp": "img/places/konyaalti/Konyaaltı_2025-480w.webp 480w, img/places/konyaalti/Konyaaltı_2025-800w.webp 800w, img/places/konyaalti/Konyaaltı_2025-1280w.webp 1280w, img/places/konyaalti/Konyaaltı_2025-1920w.webp 1920w",
+            "jpeg": "img/places/konyaalti/Konyaaltı_2025-480w.jpg 480w, img/places/konyaalti/Konyaaltı_2025-800w.jpg 800w, img/places/konyaalti/Konyaaltı_2025-1280w.jpg 1280w, img/places/konyaalti/Konyaaltı_2025-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "konyaalti-Konyaaltı_2025",
+          "author": "August Dominus",
+          "license": "CC0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Konyaalt%C4%B1_2025.jpg"
+        },
+        {
+          "filename": "Antalya,_Turkey_Beaches.JPG",
+          "alt": "Пляжи Антальи, Турция",
+          "srcset": {
+            "avif": "img/places/konyaalti/Antalya,_Turkey_Beaches-480w.avif 480w, img/places/konyaalti/Antalya,_Turkey_Beaches-800w.avif 800w, img/places/konyaalti/Antalya,_Turkey_Beaches-1280w.avif 1280w, img/places/konyaalti/Antalya,_Turkey_Beaches-1920w.avif 1920w",
+            "webp": "img/places/konyaalti/Antalya,_Turkey_Beaches-480w.webp 480w, img/places/konyaalti/Antalya,_Turkey_Beaches-800w.webp 800w, img/places/konyaalti/Antalya,_Turkey_Beaches-1280w.webp 1280w, img/places/konyaalti/Antalya,_Turkey_Beaches-1920w.webp 1920w",
+            "jpeg": "img/places/konyaalti/Antalya,_Turkey_Beaches-480w.jpg 480w, img/places/konyaalti/Antalya,_Turkey_Beaches-800w.jpg 800w, img/places/konyaalti/Antalya,_Turkey_Beaches-1280w.jpg 1280w, img/places/konyaalti/Antalya,_Turkey_Beaches-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "konyaalti-Antalya,_Turkey_Beaches",
+          "author": "Akampfer",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Antalya%2C_Turkey_Beaches.JPG"
+        },
+        {
+          "filename": "View_of_Konyaaltı_Beach_and_Beydağları_Mountains,_Antalya.jpg",
+          "alt": "Коньяалты с видом на горы Бейдаглары",
+          "srcset": {
+            "avif": "img/places/konyaalti/View_of_Konyaaltı_Beach_and_Beydağları_Mountains,_Antalya-480w.avif 480w, img/places/konyaalti/View_of_Konyaaltı_Beach_and_Beydağları_Mountains,_Antalya-800w.avif 800w, img/places/konyaalti/View_of_Konyaaltı_Beach_and_Beydağları_Mountains,_Antalya-1280w.avif 1280w, img/places/konyaalti/View_of_Konyaaltı_Beach_and_Beydağları_Mountains,_Antalya-1920w.avif 1920w",
+            "webp": "img/places/konyaalti/View_of_Konyaaltı_Beach_and_Beydağları_Mountains,_Antalya-480w.webp 480w, img/places/konyaalti/View_of_Konyaaltı_Beach_and_Beydağları_Mountains,_Antalya-800w.webp 800w, img/places/konyaalti/View_of_Konyaaltı_Beach_and_Beydağları_Mountains,_Antalya-1280w.webp 1280w, img/places/konyaalti/View_of_Konyaaltı_Beach_and_Beydağları_Mountains,_Antalya-1920w.webp 1920w",
+            "jpeg": "img/places/konyaalti/View_of_Konyaaltı_Beach_and_Beydağları_Mountains,_Antalya-480w.jpg 480w, img/places/konyaalti/View_of_Konyaaltı_Beach_and_Beydağları_Mountains,_Antalya-800w.jpg 800w, img/places/konyaalti/View_of_Konyaaltı_Beach_and_Beydağları_Mountains,_Antalya-1280w.jpg 1280w, img/places/konyaalti/View_of_Konyaaltı_Beach_and_Beydağları_Mountains,_Antalya-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "konyaalti-View_of_Konyaaltı_Beach_and_Be",
+          "author": "FingerWiki",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:View_of_Konyaalt%C4%B1_Beach_and_Beyda%C4%9Flar%C4%B1_Mountains%2C_Antalya.jpg"
+        },
+        {
+          "filename": "Plaža_Konyaaltı_ljeti.jpg",
+          "alt": "Пляж Коньяалты летом",
+          "srcset": {
+            "avif": "img/places/konyaalti/Plaža_Konyaaltı_ljeti-480w.avif 480w, img/places/konyaalti/Plaža_Konyaaltı_ljeti-800w.avif 800w, img/places/konyaalti/Plaža_Konyaaltı_ljeti-1280w.avif 1280w, img/places/konyaalti/Plaža_Konyaaltı_ljeti-1920w.avif 1920w",
+            "webp": "img/places/konyaalti/Plaža_Konyaaltı_ljeti-480w.webp 480w, img/places/konyaalti/Plaža_Konyaaltı_ljeti-800w.webp 800w, img/places/konyaalti/Plaža_Konyaaltı_ljeti-1280w.webp 1280w, img/places/konyaalti/Plaža_Konyaaltı_ljeti-1920w.webp 1920w",
+            "jpeg": "img/places/konyaalti/Plaža_Konyaaltı_ljeti-480w.jpg 480w, img/places/konyaalti/Plaža_Konyaaltı_ljeti-800w.jpg 800w, img/places/konyaalti/Plaža_Konyaaltı_ljeti-1280w.jpg 1280w, img/places/konyaalti/Plaža_Konyaaltı_ljeti-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "konyaalti-Plaža_Konyaaltı_ljeti",
+          "author": "August Dominus",
+          "license": "CC0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Pla%C5%BEa_Konyaalt%C4%B1_ljeti.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "cirali",
+      "name": "Чиралы",
+      "nameEn": "Çıralı Beach",
+      "category": "пляж",
+      "description": "Тихий посёлок без больших отелей, длинный галечно-песчаный пляж у самой границы леса. С мая по октябрь черепахи Caretta caretta откладывают яйца — пляж охраняется. Рядом Янарташ и руины Олимпоса.",
+      "coords": [
+        36.4148,
+        30.4756
+      ],
+      "photos": [
+        {
+          "filename": "Çıralı_Plajı.jpg",
+          "alt": "Пляж Чиралы",
+          "srcset": {
+            "avif": "img/places/cirali/Çıralı_Plajı-480w.avif 480w, img/places/cirali/Çıralı_Plajı-800w.avif 800w, img/places/cirali/Çıralı_Plajı-1280w.avif 1280w, img/places/cirali/Çıralı_Plajı-1920w.avif 1920w",
+            "webp": "img/places/cirali/Çıralı_Plajı-480w.webp 480w, img/places/cirali/Çıralı_Plajı-800w.webp 800w, img/places/cirali/Çıralı_Plajı-1280w.webp 1280w, img/places/cirali/Çıralı_Plajı-1920w.webp 1920w",
+            "jpeg": "img/places/cirali/Çıralı_Plajı-480w.jpg 480w, img/places/cirali/Çıralı_Plajı-800w.jpg 800w, img/places/cirali/Çıralı_Plajı-1280w.jpg 1280w, img/places/cirali/Çıralı_Plajı-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "cirali-Çıralı_Plajı",
+          "author": "Josh.artofwayfaring",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:%C3%87%C4%B1ral%C4%B1_Plaj%C4%B1.jpg"
+        },
+        {
+          "filename": "Çıralı_beach_2021-11-14-1.jpg",
+          "alt": "Чиралы 2021",
+          "srcset": {
+            "avif": "img/places/cirali/Çıralı_beach_2021-11-14-1-480w.avif 480w, img/places/cirali/Çıralı_beach_2021-11-14-1-800w.avif 800w, img/places/cirali/Çıralı_beach_2021-11-14-1-1280w.avif 1280w, img/places/cirali/Çıralı_beach_2021-11-14-1-1920w.avif 1920w",
+            "webp": "img/places/cirali/Çıralı_beach_2021-11-14-1-480w.webp 480w, img/places/cirali/Çıralı_beach_2021-11-14-1-800w.webp 800w, img/places/cirali/Çıralı_beach_2021-11-14-1-1280w.webp 1280w, img/places/cirali/Çıralı_beach_2021-11-14-1-1920w.webp 1920w",
+            "jpeg": "img/places/cirali/Çıralı_beach_2021-11-14-1-480w.jpg 480w, img/places/cirali/Çıralı_beach_2021-11-14-1-800w.jpg 800w, img/places/cirali/Çıralı_beach_2021-11-14-1-1280w.jpg 1280w, img/places/cirali/Çıralı_beach_2021-11-14-1-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "cirali-Çıralı_beach_2021-11-14-1",
+          "author": "Alexey Komarov",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:%C3%87%C4%B1ral%C4%B1_beach_2021-11-14-1.jpg"
+        },
+        {
+          "filename": "Cirali_beach_Antalya_province.jpg",
+          "alt": "Пляж Чиралы, провинция Анталья",
+          "srcset": {
+            "avif": "img/places/cirali/Cirali_beach_Antalya_province-480w.avif 480w, img/places/cirali/Cirali_beach_Antalya_province-800w.avif 800w, img/places/cirali/Cirali_beach_Antalya_province-1280w.avif 1280w, img/places/cirali/Cirali_beach_Antalya_province-1920w.avif 1920w",
+            "webp": "img/places/cirali/Cirali_beach_Antalya_province-480w.webp 480w, img/places/cirali/Cirali_beach_Antalya_province-800w.webp 800w, img/places/cirali/Cirali_beach_Antalya_province-1280w.webp 1280w, img/places/cirali/Cirali_beach_Antalya_province-1920w.webp 1920w",
+            "jpeg": "img/places/cirali/Cirali_beach_Antalya_province-480w.jpg 480w, img/places/cirali/Cirali_beach_Antalya_province-800w.jpg 800w, img/places/cirali/Cirali_beach_Antalya_province-1280w.jpg 1280w, img/places/cirali/Cirali_beach_Antalya_province-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "cirali-Cirali_beach_Antalya_province",
+          "author": "Radosław Botev",
+          "license": "CC BY 3.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Cirali_beach_Antalya_province.jpg"
+        },
+        {
+          "filename": "Lykien_Cirali_Strand.jpg",
+          "alt": "Ликийский берег Чиралы",
+          "srcset": {
+            "avif": "img/places/cirali/Lykien_Cirali_Strand-480w.avif 480w, img/places/cirali/Lykien_Cirali_Strand-800w.avif 800w, img/places/cirali/Lykien_Cirali_Strand-1280w.avif 1280w, img/places/cirali/Lykien_Cirali_Strand-1920w.avif 1920w",
+            "webp": "img/places/cirali/Lykien_Cirali_Strand-480w.webp 480w, img/places/cirali/Lykien_Cirali_Strand-800w.webp 800w, img/places/cirali/Lykien_Cirali_Strand-1280w.webp 1280w, img/places/cirali/Lykien_Cirali_Strand-1920w.webp 1920w",
+            "jpeg": "img/places/cirali/Lykien_Cirali_Strand-480w.jpg 480w, img/places/cirali/Lykien_Cirali_Strand-800w.jpg 800w, img/places/cirali/Lykien_Cirali_Strand-1280w.jpg 1280w, img/places/cirali/Lykien_Cirali_Strand-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "cirali-Lykien_Cirali_Strand",
+          "author": "Tbachner",
+          "license": "CC BY 3.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Lykien_Cirali_Strand.jpg"
+        },
+        {
+          "filename": "Çıralı_in_2013_4070.jpg",
+          "alt": "Чиралы 2013",
+          "srcset": {
+            "avif": "img/places/cirali/Çıralı_in_2013_4070-480w.avif 480w, img/places/cirali/Çıralı_in_2013_4070-800w.avif 800w, img/places/cirali/Çıralı_in_2013_4070-1280w.avif 1280w, img/places/cirali/Çıralı_in_2013_4070-1920w.avif 1920w",
+            "webp": "img/places/cirali/Çıralı_in_2013_4070-480w.webp 480w, img/places/cirali/Çıralı_in_2013_4070-800w.webp 800w, img/places/cirali/Çıralı_in_2013_4070-1280w.webp 1280w, img/places/cirali/Çıralı_in_2013_4070-1920w.webp 1920w",
+            "jpeg": "img/places/cirali/Çıralı_in_2013_4070-480w.jpg 480w, img/places/cirali/Çıralı_in_2013_4070-800w.jpg 800w, img/places/cirali/Çıralı_in_2013_4070-1280w.jpg 1280w, img/places/cirali/Çıralı_in_2013_4070-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "cirali-Çıralı_in_2013_4070",
+          "author": "Dosseman",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:%C3%87%C4%B1ral%C4%B1_in_2013_4070.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "adrasan",
+      "name": "Адрасан",
+      "nameEn": "Adrasan Bay",
+      "category": "природа",
+      "description": "Тихая бухта в сосновом лесу, песок-галька, спокойное море. Отсюда уходят катера на Сулуаду. Атмосфера деревенская: дешёвые рыбные таверны и редкие пансионы без шума.",
+      "coords": [
+        36.3097,
+        30.4869
+      ],
+      "photos": [
+        {
+          "filename": "Adrasan_koyu.jpg",
+          "alt": "Бухта Адрасан",
+          "srcset": {
+            "avif": "img/places/adrasan/Adrasan_koyu-480w.avif 480w, img/places/adrasan/Adrasan_koyu-800w.avif 800w, img/places/adrasan/Adrasan_koyu-1280w.avif 1280w, img/places/adrasan/Adrasan_koyu-1920w.avif 1920w",
+            "webp": "img/places/adrasan/Adrasan_koyu-480w.webp 480w, img/places/adrasan/Adrasan_koyu-800w.webp 800w, img/places/adrasan/Adrasan_koyu-1280w.webp 1280w, img/places/adrasan/Adrasan_koyu-1920w.webp 1920w",
+            "jpeg": "img/places/adrasan/Adrasan_koyu-480w.jpg 480w, img/places/adrasan/Adrasan_koyu-800w.jpg 800w, img/places/adrasan/Adrasan_koyu-1280w.jpg 1280w, img/places/adrasan/Adrasan_koyu-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "adrasan-Adrasan_koyu",
+          "author": "Bilgegezgintr",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Adrasan_koyu.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "maden",
+      "name": "Текирова / бухта Маден",
+      "nameEn": "Maden Bay · Tekirova",
+      "category": "природа",
+      "description": "Скрытая скалистая бухта рядом с Текировой, добираются на лодках или внедорожниках. Чистая бирюзовая вода, чёрно-белая галька, минимум инфраструктуры — классическое дикое Средиземноморье.",
+      "coords": [
+        36.4869,
+        30.5211
+      ],
+      "photos": [
+        {
+          "filename": "Tekirova,_Turkey_from_above.jpg",
+          "alt": "Текирова с воздуха",
+          "srcset": {
+            "avif": "img/places/maden/Tekirova,_Turkey_from_above-480w.avif 480w, img/places/maden/Tekirova,_Turkey_from_above-800w.avif 800w, img/places/maden/Tekirova,_Turkey_from_above-1280w.avif 1280w, img/places/maden/Tekirova,_Turkey_from_above-1920w.avif 1920w",
+            "webp": "img/places/maden/Tekirova,_Turkey_from_above-480w.webp 480w, img/places/maden/Tekirova,_Turkey_from_above-800w.webp 800w, img/places/maden/Tekirova,_Turkey_from_above-1280w.webp 1280w, img/places/maden/Tekirova,_Turkey_from_above-1920w.webp 1920w",
+            "jpeg": "img/places/maden/Tekirova,_Turkey_from_above-480w.jpg 480w, img/places/maden/Tekirova,_Turkey_from_above-800w.jpg 800w, img/places/maden/Tekirova,_Turkey_from_above-1280w.jpg 1280w, img/places/maden/Tekirova,_Turkey_from_above-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "maden-Tekirova,_Turkey_from_above",
+          "author": "User:JrawX",
+          "license": "CC0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Tekirova%2C_Turkey_from_above.jpg"
+        },
+        {
+          "filename": "Tekirova_-_panoramio.jpg",
+          "alt": "Текирова",
+          "srcset": {
+            "avif": "img/places/maden/Tekirova_-_panoramio-480w.avif 480w, img/places/maden/Tekirova_-_panoramio-800w.avif 800w, img/places/maden/Tekirova_-_panoramio-1280w.avif 1280w, img/places/maden/Tekirova_-_panoramio-1920w.avif 1920w",
+            "webp": "img/places/maden/Tekirova_-_panoramio-480w.webp 480w, img/places/maden/Tekirova_-_panoramio-800w.webp 800w, img/places/maden/Tekirova_-_panoramio-1280w.webp 1280w, img/places/maden/Tekirova_-_panoramio-1920w.webp 1920w",
+            "jpeg": "img/places/maden/Tekirova_-_panoramio-480w.jpg 480w, img/places/maden/Tekirova_-_panoramio-800w.jpg 800w, img/places/maden/Tekirova_-_panoramio-1280w.jpg 1280w, img/places/maden/Tekirova_-_panoramio-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "maden-Tekirova_-_panoramio",
+          "author": "Anton Nikiforov",
+          "license": "This file is licensed under the Creative Commons Attribution 3.0 Unported license. Attribution: Anton Nikiforov You are free: to share – to copy, distribute and transmit the work to remix – to adapt t",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Tekirova_-_panoramio.jpg"
+        },
+        {
+          "filename": "Uzun_Plaj..._-_panoramio.jpg",
+          "alt": "Длинный пляж, Текирова",
+          "srcset": {
+            "avif": "img/places/maden/Uzun_Plaj..._-_panoramio-480w.avif 480w, img/places/maden/Uzun_Plaj..._-_panoramio-800w.avif 800w, img/places/maden/Uzun_Plaj..._-_panoramio-1280w.avif 1280w, img/places/maden/Uzun_Plaj..._-_panoramio-1920w.avif 1920w",
+            "webp": "img/places/maden/Uzun_Plaj..._-_panoramio-480w.webp 480w, img/places/maden/Uzun_Plaj..._-_panoramio-800w.webp 800w, img/places/maden/Uzun_Plaj..._-_panoramio-1280w.webp 1280w, img/places/maden/Uzun_Plaj..._-_panoramio-1920w.webp 1920w",
+            "jpeg": "img/places/maden/Uzun_Plaj..._-_panoramio-480w.jpg 480w, img/places/maden/Uzun_Plaj..._-_panoramio-800w.jpg 800w, img/places/maden/Uzun_Plaj..._-_panoramio-1280w.jpg 1280w, img/places/maden/Uzun_Plaj..._-_panoramio-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "maden-Uzun_Plaj..._-_panoramio",
+          "author": "Sinan Şahin",
+          "license": "This file is licensed under the Creative Commons Attribution 3.0 Unported license. Attribution: Sinan Şahin You are free: to share – to copy, distribute and transmit the work to remix – to adapt the w",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Uzun_Plaj..._-_panoramio.jpg"
+        },
+        {
+          "filename": "A_street_in_Tekirova.jpg",
+          "alt": "Улица в Текирове",
+          "srcset": {
+            "avif": "img/places/maden/A_street_in_Tekirova-480w.avif 480w, img/places/maden/A_street_in_Tekirova-800w.avif 800w, img/places/maden/A_street_in_Tekirova-1280w.avif 1280w, img/places/maden/A_street_in_Tekirova-1920w.avif 1920w",
+            "webp": "img/places/maden/A_street_in_Tekirova-480w.webp 480w, img/places/maden/A_street_in_Tekirova-800w.webp 800w, img/places/maden/A_street_in_Tekirova-1280w.webp 1280w, img/places/maden/A_street_in_Tekirova-1920w.webp 1920w",
+            "jpeg": "img/places/maden/A_street_in_Tekirova-480w.jpg 480w, img/places/maden/A_street_in_Tekirova-800w.jpg 800w, img/places/maden/A_street_in_Tekirova-1280w.jpg 1280w, img/places/maden/A_street_in_Tekirova-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "maden-A_street_in_Tekirova",
+          "author": "Fenikals",
+          "license": "CC0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:A_street_in_Tekirova.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "phaselis",
+      "name": "Фазелис",
+      "nameEn": "Phaselis",
+      "category": "античный город",
+      "description": "Древний ликийский город прямо у трёх бухт. Руины акведука, термов и агоры — а потом купаться там, где причаливали корабли Александра Македонского.",
+      "coords": [
+        36.523,
+        30.5511
+      ],
+      "photos": [
+        {
+          "filename": "Phaselis_axb01.jpg",
+          "alt": "Фазелис, общий вид",
+          "srcset": {
+            "avif": "img/places/phaselis/Phaselis_axb01-480w.avif 480w, img/places/phaselis/Phaselis_axb01-800w.avif 800w, img/places/phaselis/Phaselis_axb01-1280w.avif 1280w, img/places/phaselis/Phaselis_axb01-1920w.avif 1920w",
+            "webp": "img/places/phaselis/Phaselis_axb01-480w.webp 480w, img/places/phaselis/Phaselis_axb01-800w.webp 800w, img/places/phaselis/Phaselis_axb01-1280w.webp 1280w, img/places/phaselis/Phaselis_axb01-1920w.webp 1920w",
+            "jpeg": "img/places/phaselis/Phaselis_axb01-480w.jpg 480w, img/places/phaselis/Phaselis_axb01-800w.jpg 800w, img/places/phaselis/Phaselis_axb01-1280w.jpg 1280w, img/places/phaselis/Phaselis_axb01-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "phaselis-Phaselis_axb01",
+          "author": "Alexander Buschorn at de.wikipedia",
+          "license": "CC BY-SA 3.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Phaselis_axb01.jpg"
+        },
+        {
+          "filename": "Phaselis_Agora.JPG",
+          "alt": "Агора Фазелиса",
+          "srcset": {
+            "avif": "img/places/phaselis/Phaselis_Agora-480w.avif 480w, img/places/phaselis/Phaselis_Agora-800w.avif 800w, img/places/phaselis/Phaselis_Agora-1280w.avif 1280w, img/places/phaselis/Phaselis_Agora-1920w.avif 1920w",
+            "webp": "img/places/phaselis/Phaselis_Agora-480w.webp 480w, img/places/phaselis/Phaselis_Agora-800w.webp 800w, img/places/phaselis/Phaselis_Agora-1280w.webp 1280w, img/places/phaselis/Phaselis_Agora-1920w.webp 1920w",
+            "jpeg": "img/places/phaselis/Phaselis_Agora-480w.jpg 480w, img/places/phaselis/Phaselis_Agora-800w.jpg 800w, img/places/phaselis/Phaselis_Agora-1280w.jpg 1280w, img/places/phaselis/Phaselis_Agora-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "phaselis-Phaselis_Agora",
+          "author": "Соболєв Володимир",
+          "license": "CC BY-SA 3.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Phaselis_Agora.JPG"
+        },
+        {
+          "filename": "Phaselis_August_2019_02.jpg",
+          "alt": "Фазелис, август 2019",
+          "srcset": {
+            "avif": "img/places/phaselis/Phaselis_August_2019_02-480w.avif 480w, img/places/phaselis/Phaselis_August_2019_02-800w.avif 800w, img/places/phaselis/Phaselis_August_2019_02-1280w.avif 1280w, img/places/phaselis/Phaselis_August_2019_02-1920w.avif 1920w",
+            "webp": "img/places/phaselis/Phaselis_August_2019_02-480w.webp 480w, img/places/phaselis/Phaselis_August_2019_02-800w.webp 800w, img/places/phaselis/Phaselis_August_2019_02-1280w.webp 1280w, img/places/phaselis/Phaselis_August_2019_02-1920w.webp 1920w",
+            "jpeg": "img/places/phaselis/Phaselis_August_2019_02-480w.jpg 480w, img/places/phaselis/Phaselis_August_2019_02-800w.jpg 800w, img/places/phaselis/Phaselis_August_2019_02-1280w.jpg 1280w, img/places/phaselis/Phaselis_August_2019_02-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "phaselis-Phaselis_August_2019_02",
+          "author": "Лобачев Владимир",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Phaselis_August_2019_02.jpg"
+        },
+        {
+          "filename": "Phaselis_August_2019_08.jpg",
+          "alt": "Гавань Фазелиса, август 2019",
+          "srcset": {
+            "avif": "img/places/phaselis/Phaselis_August_2019_08-480w.avif 480w, img/places/phaselis/Phaselis_August_2019_08-800w.avif 800w, img/places/phaselis/Phaselis_August_2019_08-1280w.avif 1280w, img/places/phaselis/Phaselis_August_2019_08-1920w.avif 1920w",
+            "webp": "img/places/phaselis/Phaselis_August_2019_08-480w.webp 480w, img/places/phaselis/Phaselis_August_2019_08-800w.webp 800w, img/places/phaselis/Phaselis_August_2019_08-1280w.webp 1280w, img/places/phaselis/Phaselis_August_2019_08-1920w.webp 1920w",
+            "jpeg": "img/places/phaselis/Phaselis_August_2019_08-480w.jpg 480w, img/places/phaselis/Phaselis_August_2019_08-800w.jpg 800w, img/places/phaselis/Phaselis_August_2019_08-1280w.jpg 1280w, img/places/phaselis/Phaselis_August_2019_08-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "phaselis-Phaselis_August_2019_08",
+          "author": "Лобачев Владимир",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Phaselis_August_2019_08.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "suluada",
+      "name": "Сулуада",
+      "nameEn": "Suluada · «Мальдивы Турции»",
+      "category": "природа",
+      "description": "Маленький необитаемый остров напротив Адрасана. Прозрачная вода с тропическими градиентами, белый песок — отсюда прозвище «Maldives of Turkey». Добираются только на лодочных турах.",
+      "coords": [
+        36.2592,
+        30.4197
+      ],
+      "photos": [
+        {
+          "filename": "Adrasan_Suluada_Drone.jpg",
+          "alt": "Сулуада с дрона",
+          "srcset": {
+            "avif": "img/places/suluada/Adrasan_Suluada_Drone-480w.avif 480w, img/places/suluada/Adrasan_Suluada_Drone-800w.avif 800w, img/places/suluada/Adrasan_Suluada_Drone-1280w.avif 1280w, img/places/suluada/Adrasan_Suluada_Drone-1920w.avif 1920w",
+            "webp": "img/places/suluada/Adrasan_Suluada_Drone-480w.webp 480w, img/places/suluada/Adrasan_Suluada_Drone-800w.webp 800w, img/places/suluada/Adrasan_Suluada_Drone-1280w.webp 1280w, img/places/suluada/Adrasan_Suluada_Drone-1920w.webp 1920w",
+            "jpeg": "img/places/suluada/Adrasan_Suluada_Drone-480w.jpg 480w, img/places/suluada/Adrasan_Suluada_Drone-800w.jpg 800w, img/places/suluada/Adrasan_Suluada_Drone-1280w.jpg 1280w, img/places/suluada/Adrasan_Suluada_Drone-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "suluada-Adrasan_Suluada_Drone",
+          "author": "Erturkercin",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Adrasan_Suluada_Drone.jpg"
+        },
+        {
+          "filename": "Adrasan_Suluada.jpg",
+          "alt": "Сулуада, вид с воды",
+          "srcset": {
+            "avif": "img/places/suluada/Adrasan_Suluada-480w.avif 480w, img/places/suluada/Adrasan_Suluada-800w.avif 800w, img/places/suluada/Adrasan_Suluada-1280w.avif 1280w, img/places/suluada/Adrasan_Suluada-1920w.avif 1920w",
+            "webp": "img/places/suluada/Adrasan_Suluada-480w.webp 480w, img/places/suluada/Adrasan_Suluada-800w.webp 800w, img/places/suluada/Adrasan_Suluada-1280w.webp 1280w, img/places/suluada/Adrasan_Suluada-1920w.webp 1920w",
+            "jpeg": "img/places/suluada/Adrasan_Suluada-480w.jpg 480w, img/places/suluada/Adrasan_Suluada-800w.jpg 800w, img/places/suluada/Adrasan_Suluada-1280w.jpg 1280w, img/places/suluada/Adrasan_Suluada-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "suluada-Adrasan_Suluada",
+          "author": "Erturkercin",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Adrasan_Suluada.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "kemer",
+      "name": "Кемер",
+      "nameEn": "Kemer",
+      "category": "город",
+      "description": "Курортный городок в 40 км от Антальи, сосновые горы спускаются прямо к морю. Длинный променад, марина с яхтами, маяк. Удобная база для радиальных поездок к Олимпосу, Чиралы, каньону Гёйнюк.",
+      "coords": [
+        36.6028,
+        30.5603
+      ],
+      "photos": [
+        {
+          "filename": "Kemer_Antalya_TÜRKİYE_-_panoramio_(11).jpg",
+          "alt": "Кемер, Анталья",
+          "srcset": {
+            "avif": "img/places/kemer/Kemer_Antalya_TÜRKİYE_-_panoramio_(11)-480w.avif 480w, img/places/kemer/Kemer_Antalya_TÜRKİYE_-_panoramio_(11)-800w.avif 800w, img/places/kemer/Kemer_Antalya_TÜRKİYE_-_panoramio_(11)-1280w.avif 1280w, img/places/kemer/Kemer_Antalya_TÜRKİYE_-_panoramio_(11)-1920w.avif 1920w",
+            "webp": "img/places/kemer/Kemer_Antalya_TÜRKİYE_-_panoramio_(11)-480w.webp 480w, img/places/kemer/Kemer_Antalya_TÜRKİYE_-_panoramio_(11)-800w.webp 800w, img/places/kemer/Kemer_Antalya_TÜRKİYE_-_panoramio_(11)-1280w.webp 1280w, img/places/kemer/Kemer_Antalya_TÜRKİYE_-_panoramio_(11)-1920w.webp 1920w",
+            "jpeg": "img/places/kemer/Kemer_Antalya_TÜRKİYE_-_panoramio_(11)-480w.jpg 480w, img/places/kemer/Kemer_Antalya_TÜRKİYE_-_panoramio_(11)-800w.jpg 800w, img/places/kemer/Kemer_Antalya_TÜRKİYE_-_panoramio_(11)-1280w.jpg 1280w, img/places/kemer/Kemer_Antalya_TÜRKİYE_-_panoramio_(11)-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "kemer-Kemer_Antalya_TÜRKİYE_-_panora",
+          "author": "Emin Başar ÖZDEMİR",
+          "license": "This file is licensed under the Creative Commons Attribution 3.0 Unported license. Attribution: Emin Başar ÖZDEMİR You are free: to share – to copy, distribute and transmit the work to remix – to adap",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Kemer_Antalya_T%C3%9CRK%C4%B0YE_-_panoramio_%2811%29.jpg"
+        },
+        {
+          "filename": "Kemer_Marina_-_panoramio.jpg",
+          "alt": "Марина Кемера",
+          "srcset": {
+            "avif": "img/places/kemer/Kemer_Marina_-_panoramio-480w.avif 480w, img/places/kemer/Kemer_Marina_-_panoramio-800w.avif 800w, img/places/kemer/Kemer_Marina_-_panoramio-1280w.avif 1280w, img/places/kemer/Kemer_Marina_-_panoramio-1920w.avif 1920w",
+            "webp": "img/places/kemer/Kemer_Marina_-_panoramio-480w.webp 480w, img/places/kemer/Kemer_Marina_-_panoramio-800w.webp 800w, img/places/kemer/Kemer_Marina_-_panoramio-1280w.webp 1280w, img/places/kemer/Kemer_Marina_-_panoramio-1920w.webp 1920w",
+            "jpeg": "img/places/kemer/Kemer_Marina_-_panoramio-480w.jpg 480w, img/places/kemer/Kemer_Marina_-_panoramio-800w.jpg 800w, img/places/kemer/Kemer_Marina_-_panoramio-1280w.jpg 1280w, img/places/kemer/Kemer_Marina_-_panoramio-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "kemer-Kemer_Marina_-_panoramio",
+          "author": "Tanya Dedyukhina",
+          "license": "This file is licensed under the Creative Commons Attribution 3.0 Unported license. Attribution: Tanya Dedyukhina You are free: to share – to copy, distribute and transmit the work to remix – to adapt ",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Kemer_Marina_-_panoramio.jpg"
+        },
+        {
+          "filename": "Kemer_Lighthouse_-_panoramio.jpg",
+          "alt": "Маяк Кемера",
+          "srcset": {
+            "avif": "img/places/kemer/Kemer_Lighthouse_-_panoramio-480w.avif 480w, img/places/kemer/Kemer_Lighthouse_-_panoramio-800w.avif 800w, img/places/kemer/Kemer_Lighthouse_-_panoramio-1280w.avif 1280w, img/places/kemer/Kemer_Lighthouse_-_panoramio-1920w.avif 1920w",
+            "webp": "img/places/kemer/Kemer_Lighthouse_-_panoramio-480w.webp 480w, img/places/kemer/Kemer_Lighthouse_-_panoramio-800w.webp 800w, img/places/kemer/Kemer_Lighthouse_-_panoramio-1280w.webp 1280w, img/places/kemer/Kemer_Lighthouse_-_panoramio-1920w.webp 1920w",
+            "jpeg": "img/places/kemer/Kemer_Lighthouse_-_panoramio-480w.jpg 480w, img/places/kemer/Kemer_Lighthouse_-_panoramio-800w.jpg 800w, img/places/kemer/Kemer_Lighthouse_-_panoramio-1280w.jpg 1280w, img/places/kemer/Kemer_Lighthouse_-_panoramio-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "kemer-Kemer_Lighthouse_-_panoramio",
+          "author": "Tanya Dedyukhina",
+          "license": "This file is licensed under the Creative Commons Attribution 3.0 Unported license. Attribution: Tanya Dedyukhina You are free: to share – to copy, distribute and transmit the work to remix – to adapt ",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Kemer_Lighthouse_-_panoramio.jpg"
+        },
+        {
+          "filename": "Kemer_Beach_-_panoramio.jpg",
+          "alt": "Пляж Кемера",
+          "srcset": {
+            "avif": "img/places/kemer/Kemer_Beach_-_panoramio-480w.avif 480w, img/places/kemer/Kemer_Beach_-_panoramio-800w.avif 800w, img/places/kemer/Kemer_Beach_-_panoramio-1280w.avif 1280w, img/places/kemer/Kemer_Beach_-_panoramio-1920w.avif 1920w",
+            "webp": "img/places/kemer/Kemer_Beach_-_panoramio-480w.webp 480w, img/places/kemer/Kemer_Beach_-_panoramio-800w.webp 800w, img/places/kemer/Kemer_Beach_-_panoramio-1280w.webp 1280w, img/places/kemer/Kemer_Beach_-_panoramio-1920w.webp 1920w",
+            "jpeg": "img/places/kemer/Kemer_Beach_-_panoramio-480w.jpg 480w, img/places/kemer/Kemer_Beach_-_panoramio-800w.jpg 800w, img/places/kemer/Kemer_Beach_-_panoramio-1280w.jpg 1280w, img/places/kemer/Kemer_Beach_-_panoramio-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "kemer-Kemer_Beach_-_panoramio",
+          "author": "Peter Wolf",
+          "license": "This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license. Attribution: Peter Wolf You are free: to share – to copy, distribute and transmit the work to remix – to ",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Kemer_Beach_-_panoramio.jpg"
+        },
+        {
+          "filename": "Kemer_-_panoramio_(2).jpg",
+          "alt": "Кемер",
+          "srcset": {
+            "avif": "img/places/kemer/Kemer_-_panoramio_(2)-480w.avif 480w, img/places/kemer/Kemer_-_panoramio_(2)-800w.avif 800w, img/places/kemer/Kemer_-_panoramio_(2)-1280w.avif 1280w, img/places/kemer/Kemer_-_panoramio_(2)-1920w.avif 1920w",
+            "webp": "img/places/kemer/Kemer_-_panoramio_(2)-480w.webp 480w, img/places/kemer/Kemer_-_panoramio_(2)-800w.webp 800w, img/places/kemer/Kemer_-_panoramio_(2)-1280w.webp 1280w, img/places/kemer/Kemer_-_panoramio_(2)-1920w.webp 1920w",
+            "jpeg": "img/places/kemer/Kemer_-_panoramio_(2)-480w.jpg 480w, img/places/kemer/Kemer_-_panoramio_(2)-800w.jpg 800w, img/places/kemer/Kemer_-_panoramio_(2)-1280w.jpg 1280w, img/places/kemer/Kemer_-_panoramio_(2)-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "kemer-Kemer_-_panoramio_(2)",
+          "author": "Tanya Dedyukhina",
+          "license": "This file is licensed under the Creative Commons Attribution 3.0 Unported license. Attribution: Tanya Dedyukhina You are free: to share – to copy, distribute and transmit the work to remix – to adapt ",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Kemer_-_panoramio_%282%29.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "termessos",
+      "name": "Термессос",
+      "nameEn": "Termessos",
+      "category": "античный город",
+      "description": "Орлиное гнездо на высоте 1000 м. Город, который Александр не смог взять штурмом. Театр на склоне с видом на море, мощный некрополь и нетронутые саркофаги среди соснового леса.",
+      "coords": [
+        36.9833,
+        30.4647
+      ],
+      "photos": [
+        {
+          "filename": "Termessos_-_Theater.jpg",
+          "alt": "Театр Термессоса",
+          "srcset": {
+            "avif": "img/places/termessos/Termessos_-_Theater-480w.avif 480w, img/places/termessos/Termessos_-_Theater-800w.avif 800w, img/places/termessos/Termessos_-_Theater-1280w.avif 1280w, img/places/termessos/Termessos_-_Theater-1920w.avif 1920w",
+            "webp": "img/places/termessos/Termessos_-_Theater-480w.webp 480w, img/places/termessos/Termessos_-_Theater-800w.webp 800w, img/places/termessos/Termessos_-_Theater-1280w.webp 1280w, img/places/termessos/Termessos_-_Theater-1920w.webp 1920w",
+            "jpeg": "img/places/termessos/Termessos_-_Theater-480w.jpg 480w, img/places/termessos/Termessos_-_Theater-800w.jpg 800w, img/places/termessos/Termessos_-_Theater-1280w.jpg 1280w, img/places/termessos/Termessos_-_Theater-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "termessos-Termessos_-_Theater",
+          "author": "Ingo Mehling",
+          "license": "CC BY-SA 3.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Termessos_-_Theater.jpg"
+        },
+        {
+          "filename": "Termessos_Agora_3640_panorama.jpg",
+          "alt": "Агора Термессоса, панорама",
+          "srcset": {
+            "avif": "img/places/termessos/Termessos_Agora_3640_panorama-480w.avif 480w, img/places/termessos/Termessos_Agora_3640_panorama-800w.avif 800w, img/places/termessos/Termessos_Agora_3640_panorama-1280w.avif 1280w, img/places/termessos/Termessos_Agora_3640_panorama-1920w.avif 1920w",
+            "webp": "img/places/termessos/Termessos_Agora_3640_panorama-480w.webp 480w, img/places/termessos/Termessos_Agora_3640_panorama-800w.webp 800w, img/places/termessos/Termessos_Agora_3640_panorama-1280w.webp 1280w, img/places/termessos/Termessos_Agora_3640_panorama-1920w.webp 1920w",
+            "jpeg": "img/places/termessos/Termessos_Agora_3640_panorama-480w.jpg 480w, img/places/termessos/Termessos_Agora_3640_panorama-800w.jpg 800w, img/places/termessos/Termessos_Agora_3640_panorama-1280w.jpg 1280w, img/places/termessos/Termessos_Agora_3640_panorama-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "termessos-Termessos_Agora_3640_panorama",
+          "author": "Dosseman",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Termessos_Agora_3640_panorama.jpg"
+        },
+        {
+          "filename": "E._T._Daniell_-_Termessus,_looking_SE.jpg",
+          "alt": "Термессос, исторический вид (Public Domain)",
+          "srcset": {
+            "avif": "img/places/termessos/E._T._Daniell_-_Termessus,_looking_SE-480w.avif 480w, img/places/termessos/E._T._Daniell_-_Termessus,_looking_SE-800w.avif 800w, img/places/termessos/E._T._Daniell_-_Termessus,_looking_SE-1280w.avif 1280w, img/places/termessos/E._T._Daniell_-_Termessus,_looking_SE-1920w.avif 1920w",
+            "webp": "img/places/termessos/E._T._Daniell_-_Termessus,_looking_SE-480w.webp 480w, img/places/termessos/E._T._Daniell_-_Termessus,_looking_SE-800w.webp 800w, img/places/termessos/E._T._Daniell_-_Termessus,_looking_SE-1280w.webp 1280w, img/places/termessos/E._T._Daniell_-_Termessus,_looking_SE-1920w.webp 1920w",
+            "jpeg": "img/places/termessos/E._T._Daniell_-_Termessus,_looking_SE-480w.jpg 480w, img/places/termessos/E._T._Daniell_-_Termessus,_looking_SE-800w.jpg 800w, img/places/termessos/E._T._Daniell_-_Termessus,_looking_SE-1280w.jpg 1280w, img/places/termessos/E._T._Daniell_-_Termessus,_looking_SE-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "termessos-E._T._Daniell_-_Termessus,_loo",
+          "author": "Public domain Public domain false false",
+          "license": "This is a faithful photographic reproduction of a two-dimensional, public domain work of art. The work of art itself is in the public domain for the following reason: Public domain Public domain false",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:E._T._Daniell_-_Termessus%2C_looking_SE.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "aspendos",
+      "name": "Аспендос",
+      "nameEn": "Aspendos",
+      "category": "античный город",
+      "description": "Самый сохранившийся римский театр на Средиземноморье. 15 000 зрителей, идеальная акустика, до сих пор используется для оперных фестивалей. Рядом акведук и руины верхнего города.",
+      "coords": [
+        36.9389,
+        31.1722
+      ],
+      "photos": [
+        {
+          "filename": "Orchestra_at_down.jpg",
+          "alt": "Оркестра театра на рассвете",
+          "srcset": {
+            "avif": "img/places/aspendos/Orchestra_at_down-480w.avif 480w, img/places/aspendos/Orchestra_at_down-800w.avif 800w, img/places/aspendos/Orchestra_at_down-1280w.avif 1280w, img/places/aspendos/Orchestra_at_down-1920w.avif 1920w",
+            "webp": "img/places/aspendos/Orchestra_at_down-480w.webp 480w, img/places/aspendos/Orchestra_at_down-800w.webp 800w, img/places/aspendos/Orchestra_at_down-1280w.webp 1280w, img/places/aspendos/Orchestra_at_down-1920w.webp 1920w",
+            "jpeg": "img/places/aspendos/Orchestra_at_down-480w.jpg 480w, img/places/aspendos/Orchestra_at_down-800w.jpg 800w, img/places/aspendos/Orchestra_at_down-1280w.jpg 1280w, img/places/aspendos/Orchestra_at_down-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "aspendos-Orchestra_at_down",
+          "author": "Mhmtşntrk1",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Orchestra_at_down.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "side",
+      "name": "Сиде",
+      "nameEn": "Side Ancient City",
+      "category": "античный город",
+      "description": "Античный город на полуострове: колонны храма Аполлона стоят прямо на закатном берегу. Классический открыточный кадр Турции и живая курортная жизнь — всё рядом.",
+      "coords": [
+        36.7686,
+        31.3892
+      ],
+      "photos": [
+        {
+          "filename": "Античный_Сиде.JPG",
+          "alt": "Античный Сиде",
+          "srcset": {
+            "avif": "img/places/side/Античный_Сиде-480w.avif 480w, img/places/side/Античный_Сиде-800w.avif 800w, img/places/side/Античный_Сиде-1280w.avif 1280w, img/places/side/Античный_Сиде-1920w.avif 1920w",
+            "webp": "img/places/side/Античный_Сиде-480w.webp 480w, img/places/side/Античный_Сиде-800w.webp 800w, img/places/side/Античный_Сиде-1280w.webp 1280w, img/places/side/Античный_Сиде-1920w.webp 1920w",
+            "jpeg": "img/places/side/Античный_Сиде-480w.jpg 480w, img/places/side/Античный_Сиде-800w.jpg 800w, img/places/side/Античный_Сиде-1280w.jpg 1280w, img/places/side/Античный_Сиде-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "side-Античный_Сиде",
+          "author": "Dashamitr",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%BD%D1%82%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%A1%D0%B8%D0%B4%D0%B5.JPG"
+        },
+        {
+          "filename": "Side_Panorama.jpg",
+          "alt": "Панорама Сиде",
+          "srcset": {
+            "avif": "img/places/side/Side_Panorama-480w.avif 480w, img/places/side/Side_Panorama-800w.avif 800w, img/places/side/Side_Panorama-1280w.avif 1280w, img/places/side/Side_Panorama-1920w.avif 1920w",
+            "webp": "img/places/side/Side_Panorama-480w.webp 480w, img/places/side/Side_Panorama-800w.webp 800w, img/places/side/Side_Panorama-1280w.webp 1280w, img/places/side/Side_Panorama-1920w.webp 1920w",
+            "jpeg": "img/places/side/Side_Panorama-480w.jpg 480w, img/places/side/Side_Panorama-800w.jpg 800w, img/places/side/Side_Panorama-1280w.jpg 1280w, img/places/side/Side_Panorama-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "side-Side_Panorama",
+          "author": "Lee Vilenski",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Side_Panorama.jpg"
+        },
+        {
+          "filename": "Side.Great_Gate(02).jpg",
+          "alt": "Большие ворота Сиде",
+          "srcset": {
+            "avif": "img/places/side/Side.Great_Gate(02)-480w.avif 480w, img/places/side/Side.Great_Gate(02)-800w.avif 800w, img/places/side/Side.Great_Gate(02)-1280w.avif 1280w, img/places/side/Side.Great_Gate(02)-1920w.avif 1920w",
+            "webp": "img/places/side/Side.Great_Gate(02)-480w.webp 480w, img/places/side/Side.Great_Gate(02)-800w.webp 800w, img/places/side/Side.Great_Gate(02)-1280w.webp 1280w, img/places/side/Side.Great_Gate(02)-1920w.webp 1920w",
+            "jpeg": "img/places/side/Side.Great_Gate(02)-480w.jpg 480w, img/places/side/Side.Great_Gate(02)-800w.jpg 800w, img/places/side/Side.Great_Gate(02)-1280w.jpg 1280w, img/places/side/Side.Great_Gate(02)-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "side-Side.Great_Gate(02)",
+          "author": "",
+          "license": "CC BY-SA 3.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Side.Great_Gate%2802%29.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "kaleici",
+      "name": "Калеичи",
+      "nameEn": "Kaleiçi — Старый город",
+      "category": "город",
+      "description": "Старый город внутри крепостных стен: узкие улочки, османские деревянные дома, римские ворота Адриана и древняя гавань. Самый атмосферный кусок Антальи — особенно после заката.",
+      "coords": [
+        36.8838,
+        30.7056
+      ],
+      "photos": [
+        {
+          "filename": "Antalya_-_Altstadtgasse.jpg",
+          "alt": "Улица старого города Антальи",
+          "srcset": {
+            "avif": "img/places/kaleici/Antalya_-_Altstadtgasse-480w.avif 480w, img/places/kaleici/Antalya_-_Altstadtgasse-800w.avif 800w, img/places/kaleici/Antalya_-_Altstadtgasse-1280w.avif 1280w, img/places/kaleici/Antalya_-_Altstadtgasse-1920w.avif 1920w",
+            "webp": "img/places/kaleici/Antalya_-_Altstadtgasse-480w.webp 480w, img/places/kaleici/Antalya_-_Altstadtgasse-800w.webp 800w, img/places/kaleici/Antalya_-_Altstadtgasse-1280w.webp 1280w, img/places/kaleici/Antalya_-_Altstadtgasse-1920w.webp 1920w",
+            "jpeg": "img/places/kaleici/Antalya_-_Altstadtgasse-480w.jpg 480w, img/places/kaleici/Antalya_-_Altstadtgasse-800w.jpg 800w, img/places/kaleici/Antalya_-_Altstadtgasse-1280w.jpg 1280w, img/places/kaleici/Antalya_-_Altstadtgasse-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "kaleici-Antalya_-_Altstadtgasse",
+          "author": "Wolfgang Sauber",
+          "license": "CC BY-SA 3.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Antalya_-_Altstadtgasse.jpg"
+        },
+        {
+          "filename": "Kaleiçi_old_town,_Antalya,_Turkey_-_window_view.jpg",
+          "alt": "Старый город Калеичи",
+          "srcset": {
+            "avif": "img/places/kaleici/Kaleiçi_old_town,_Antalya,_Turkey_-_window_view-480w.avif 480w, img/places/kaleici/Kaleiçi_old_town,_Antalya,_Turkey_-_window_view-800w.avif 800w, img/places/kaleici/Kaleiçi_old_town,_Antalya,_Turkey_-_window_view-1280w.avif 1280w, img/places/kaleici/Kaleiçi_old_town,_Antalya,_Turkey_-_window_view-1920w.avif 1920w",
+            "webp": "img/places/kaleici/Kaleiçi_old_town,_Antalya,_Turkey_-_window_view-480w.webp 480w, img/places/kaleici/Kaleiçi_old_town,_Antalya,_Turkey_-_window_view-800w.webp 800w, img/places/kaleici/Kaleiçi_old_town,_Antalya,_Turkey_-_window_view-1280w.webp 1280w, img/places/kaleici/Kaleiçi_old_town,_Antalya,_Turkey_-_window_view-1920w.webp 1920w",
+            "jpeg": "img/places/kaleici/Kaleiçi_old_town,_Antalya,_Turkey_-_window_view-480w.jpg 480w, img/places/kaleici/Kaleiçi_old_town,_Antalya,_Turkey_-_window_view-800w.jpg 800w, img/places/kaleici/Kaleiçi_old_town,_Antalya,_Turkey_-_window_view-1280w.jpg 1280w, img/places/kaleici/Kaleiçi_old_town,_Antalya,_Turkey_-_window_view-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "kaleici-Kaleiçi_old_town,_Antalya,_Tur",
+          "author": "Sharon Hahn Darlin",
+          "license": "CC BY 2.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Kalei%C3%A7i_old_town%2C_Antalya%2C_Turkey_-_window_view.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "yanartas",
+      "name": "Янарташ / Химера",
+      "nameEn": "Yanartaş · Chimaera",
+      "category": "природа",
+      "description": "Склон горы, где из-под земли три тысячи лет горит метан. По легенде здесь Беллерофонт сбросил химеру. Лучше всего после заката: огни видны во всей силе, тропа через сосновый лес.",
+      "coords": [
+        36.4292,
+        30.4711
+      ],
+      "photos": []
+    },
+    {
+      "slug": "goynuk",
+      "name": "Каньон Гёйнюк",
+      "nameEn": "Göynük Canyon",
+      "category": "природа",
+      "description": "Узкий каньон с холодной горной рекой и отвесными стенами. В глубине — каньонинг по воде в неопрене. Идеальный контраст к жаркому пляжу: каменная тень и +18 в воде даже летом.",
+      "coords": [
+        36.6928,
+        30.5392
+      ],
+      "photos": [
+        {
+          "filename": "Göynük_Kanyon_-_panoramio_(1).jpg",
+          "alt": "Вход в каньон Гёйнюк",
+          "srcset": {
+            "avif": "img/places/goynuk/Göynük_Kanyon_-_panoramio_(1)-480w.avif 480w, img/places/goynuk/Göynük_Kanyon_-_panoramio_(1)-800w.avif 800w, img/places/goynuk/Göynük_Kanyon_-_panoramio_(1)-1280w.avif 1280w, img/places/goynuk/Göynük_Kanyon_-_panoramio_(1)-1920w.avif 1920w",
+            "webp": "img/places/goynuk/Göynük_Kanyon_-_panoramio_(1)-480w.webp 480w, img/places/goynuk/Göynük_Kanyon_-_panoramio_(1)-800w.webp 800w, img/places/goynuk/Göynük_Kanyon_-_panoramio_(1)-1280w.webp 1280w, img/places/goynuk/Göynük_Kanyon_-_panoramio_(1)-1920w.webp 1920w",
+            "jpeg": "img/places/goynuk/Göynük_Kanyon_-_panoramio_(1)-480w.jpg 480w, img/places/goynuk/Göynük_Kanyon_-_panoramio_(1)-800w.jpg 800w, img/places/goynuk/Göynük_Kanyon_-_panoramio_(1)-1280w.jpg 1280w, img/places/goynuk/Göynük_Kanyon_-_panoramio_(1)-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "goynuk-Göynük_Kanyon_-_panoramio_(1)",
+          "author": "Tanya Dedyukhina",
+          "license": "This file is licensed under the Creative Commons Attribution 3.0 Unported license. Attribution: Tanya Dedyukhina You are free: to share – to copy, distribute and transmit the work to remix – to adapt ",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:G%C3%B6yn%C3%BCk_Kanyon_-_panoramio_%281%29.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "olympos",
+      "name": "Олимпос",
+      "nameEn": "Olympos Ancient City",
+      "category": "античный город",
+      "description": "Руины ликийского города, заросшие лавром и плющом, в долине между двумя скалами. Дорожка вдоль ручья выводит к дикому пляжу — редкое сочетание античности и нетронутого моря.",
+      "coords": [
+        36.3958,
+        30.4731
+      ],
+      "photos": [
+        {
+          "filename": "Olympos_Akropolü.jpg",
+          "alt": "Акрополь Олимпоса",
+          "srcset": {
+            "avif": "img/places/olympos/Olympos_Akropolü-480w.avif 480w, img/places/olympos/Olympos_Akropolü-800w.avif 800w, img/places/olympos/Olympos_Akropolü-1280w.avif 1280w, img/places/olympos/Olympos_Akropolü-1920w.avif 1920w",
+            "webp": "img/places/olympos/Olympos_Akropolü-480w.webp 480w, img/places/olympos/Olympos_Akropolü-800w.webp 800w, img/places/olympos/Olympos_Akropolü-1280w.webp 1280w, img/places/olympos/Olympos_Akropolü-1920w.webp 1920w",
+            "jpeg": "img/places/olympos/Olympos_Akropolü-480w.jpg 480w, img/places/olympos/Olympos_Akropolü-800w.jpg 800w, img/places/olympos/Olympos_Akropolü-1280w.jpg 1280w, img/places/olympos/Olympos_Akropolü-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "olympos-Olympos_Akropolü",
+          "author": "Magurale",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Olympos_Akropol%C3%BC.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "myra",
+      "name": "Мира Ликийская / Демре",
+      "nameEn": "Myra · Demre",
+      "category": "античный город",
+      "description": "Скальные ликийские гробницы, вырезанные в отвесной стене, и римский театр у подножия. Здесь служил Святой Николай — тот самый прообраз Санта-Клауса.",
+      "coords": [
+        36.2597,
+        29.9847
+      ],
+      "photos": [
+        {
+          "filename": "Facade_of_Rock_Tomb_(Myra).png",
+          "alt": "Фасад скальной гробницы Миры",
+          "srcset": {
+            "avif": "img/places/myra/Facade_of_Rock_Tomb_(Myra)-480w.avif 480w, img/places/myra/Facade_of_Rock_Tomb_(Myra)-800w.avif 800w, img/places/myra/Facade_of_Rock_Tomb_(Myra)-1280w.avif 1280w, img/places/myra/Facade_of_Rock_Tomb_(Myra)-1920w.avif 1920w",
+            "webp": "img/places/myra/Facade_of_Rock_Tomb_(Myra)-480w.webp 480w, img/places/myra/Facade_of_Rock_Tomb_(Myra)-800w.webp 800w, img/places/myra/Facade_of_Rock_Tomb_(Myra)-1280w.webp 1280w, img/places/myra/Facade_of_Rock_Tomb_(Myra)-1920w.webp 1920w",
+            "jpeg": "img/places/myra/Facade_of_Rock_Tomb_(Myra)-480w.jpg 480w, img/places/myra/Facade_of_Rock_Tomb_(Myra)-800w.jpg 800w, img/places/myra/Facade_of_Rock_Tomb_(Myra)-1280w.jpg 1280w, img/places/myra/Facade_of_Rock_Tomb_(Myra)-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "myra-Facade_of_Rock_Tomb_(Myra)",
+          "author": "Arthur Evans",
+          "license": "Public Domain",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Facade_of_Rock_Tomb_%28Myra%29.png"
+        }
+      ]
+    },
+    {
+      "slug": "perge",
+      "name": "Перге",
+      "nameEn": "Perge",
+      "category": "античный город",
+      "description": "Большой эллинистическо-римский город — стадион, агора, главный проспект с колоннадой и каналом по центру. Масштаб позволяет почувствовать городскую жизнь древности.",
+      "coords": [
+        36.9614,
+        30.8542
+      ],
+      "photos": []
+    },
+    {
+      "slug": "duden",
+      "name": "Водопад Дюден",
+      "nameEn": "Lower Düden Waterfall",
+      "category": "природа",
+      "description": "Редкий случай — водопад падает прямо со скалы в Средиземное море, высота 40 м. Лучший вид с моря (с прогулочного катера) или со смотровой в парке Дюден.",
+      "coords": [
+        36.8478,
+        30.8267
+      ],
+      "photos": [
+        {
+          "filename": "Antalya,_Turkey_March_2022_-_Düden_Park_-_Lower_Düden_Waterfalls.jpg",
+          "alt": "Парк Дюден, март 2022",
+          "srcset": {
+            "avif": "img/places/duden/Antalya,_Turkey_March_2022_-_Düden_Park_-_Lower_Düden_Waterfalls-480w.avif 480w, img/places/duden/Antalya,_Turkey_March_2022_-_Düden_Park_-_Lower_Düden_Waterfalls-800w.avif 800w, img/places/duden/Antalya,_Turkey_March_2022_-_Düden_Park_-_Lower_Düden_Waterfalls-1280w.avif 1280w, img/places/duden/Antalya,_Turkey_March_2022_-_Düden_Park_-_Lower_Düden_Waterfalls-1920w.avif 1920w",
+            "webp": "img/places/duden/Antalya,_Turkey_March_2022_-_Düden_Park_-_Lower_Düden_Waterfalls-480w.webp 480w, img/places/duden/Antalya,_Turkey_March_2022_-_Düden_Park_-_Lower_Düden_Waterfalls-800w.webp 800w, img/places/duden/Antalya,_Turkey_March_2022_-_Düden_Park_-_Lower_Düden_Waterfalls-1280w.webp 1280w, img/places/duden/Antalya,_Turkey_March_2022_-_Düden_Park_-_Lower_Düden_Waterfalls-1920w.webp 1920w",
+            "jpeg": "img/places/duden/Antalya,_Turkey_March_2022_-_Düden_Park_-_Lower_Düden_Waterfalls-480w.jpg 480w, img/places/duden/Antalya,_Turkey_March_2022_-_Düden_Park_-_Lower_Düden_Waterfalls-800w.jpg 800w, img/places/duden/Antalya,_Turkey_March_2022_-_Düden_Park_-_Lower_Düden_Waterfalls-1280w.jpg 1280w, img/places/duden/Antalya,_Turkey_March_2022_-_Düden_Park_-_Lower_Düden_Waterfalls-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "duden-Antalya,_Turkey_March_2022_-_D",
+          "author": "Sharon Hahn Darlin",
+          "license": "CC BY 2.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Antalya%2C_Turkey_March_2022_-_D%C3%BCden_Park_-_Lower_D%C3%BCden_Waterfalls.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "kursunlu",
+      "name": "Водопад Куршунлу",
+      "nameEn": "Kurşunlu Waterfall",
+      "category": "природа",
+      "description": "Водопад в природном парке: каскад среди сосен, тропинки вдоль ручья и небольших озёр. Много тени, прохлада, не такой раскрученный, как Дюден — хорошо ехать на полдня.",
+      "coords": [
+        36.9869,
+        30.8425
+      ],
+      "photos": [
+        {
+          "filename": "Kursunlu_Waterfall_1.jpg",
+          "alt": "Водопад Куршунлу",
+          "srcset": {
+            "avif": "img/places/kursunlu/Kursunlu_Waterfall_1-480w.avif 480w, img/places/kursunlu/Kursunlu_Waterfall_1-800w.avif 800w, img/places/kursunlu/Kursunlu_Waterfall_1-1280w.avif 1280w, img/places/kursunlu/Kursunlu_Waterfall_1-1920w.avif 1920w",
+            "webp": "img/places/kursunlu/Kursunlu_Waterfall_1-480w.webp 480w, img/places/kursunlu/Kursunlu_Waterfall_1-800w.webp 800w, img/places/kursunlu/Kursunlu_Waterfall_1-1280w.webp 1280w, img/places/kursunlu/Kursunlu_Waterfall_1-1920w.webp 1920w",
+            "jpeg": "img/places/kursunlu/Kursunlu_Waterfall_1-480w.jpg 480w, img/places/kursunlu/Kursunlu_Waterfall_1-800w.jpg 800w, img/places/kursunlu/Kursunlu_Waterfall_1-1280w.jpg 1280w, img/places/kursunlu/Kursunlu_Waterfall_1-1920w.jpg 1920w"
+          },
+          "sizes": "(max-width: 480px) 480px, (max-width: 800px) 800px, (max-width: 1280px) 1280px, 1920px",
+          "attribution_id": "kursunlu-Kursunlu_Waterfall_1",
+          "author": "Burak Küçükarslan",
+          "license": "CC BY-SA 4.0",
+          "commons_url": "https://commons.wikimedia.org/wiki/File:Kursunlu_Waterfall_1.jpg"
+        }
+      ]
+    }
+  ]
+}

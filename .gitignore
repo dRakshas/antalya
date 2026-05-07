@@ -1,6 +1,9 @@
+# Original high-res images — downloaded locally, not committed
+img/places/*/originals/
+img/hero/originals/
+
+# Keep optimized variants (avif/webp/jpg at 4 sizes) — these are committed
+# The optimization scripts regenerate these from originals
+
+# Node / build artifacts
 node_modules/
-.DS_Store
-*.log
-.env
-dist/
-.cache/

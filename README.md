@@ -1,18 +1,16 @@
-# 18 мест Антальи
+# Анталья 18 — интерактивный путеводитель
 
-Статический лендинг-путеводитель по 18 лучшим местам Антальи. Пользователь просматривает карточки с фотографиями, голосует «Хочу сюда», собирает список и копирует его. Без регистрации, без бэкенда, без трения.
+Лендинг «18 мест Антальи» — выбери, куда хочется, и скопируй список.
 
-**Live:** https://drakshas.github.io/antalya/
+**Сайт**: [drakshas.github.io/antalya](https://drakshas.github.io/antalya/)
 
-## Стек
+## Что это
 
-- HTML5 (семантика, BEM-подобные классы)
-- CSS3 (custom properties, Grid, Flexbox, `clamp()`, scroll-driven animations) — без препроцессоров
-- Vanilla JavaScript ES2020 (modules) — без фреймворков, бандл < 10 kb gzip
-- Google Fonts self-hosted: Fraunces (variable), Inter (variable)
-- Деплой: GitHub Pages из ветки `main`
+Подборка 18 мест провинции Анталья: дикие бухты, античные города, каньоны и водопады. Нажми «Хочу сюда» на карточках — список сохраняется в браузере и можно скопировать или поделиться.
 
-## Как запускать локально
+## Запуск локально
+
+Статический сайт, никакой сборки не нужно. Используй любой HTTP-сервер:
 
 ```bash
 npx serve .
@@ -20,28 +18,25 @@ npx serve .
 python3 -m http.server 8080
 ```
 
-Открыть http://localhost:3000 (или 8080).
+Открой `http://localhost:8080`.
 
-> ES-модули работают только через HTTP, не через `file://`.
+> Нельзя открыть через `file://` — ES-модули не работают без HTTP сервера.
 
-## Структура файлов
+## Структура
 
 ```
-antalya/
-├── index.html          # Единственная страница
-├── css/                # Стили: reset, tokens, base, layout, components, animations
-├── js/                 # Логика: main, store, voting, carousel, theme, share, render
-├── data/places.js      # Данные 18 мест
-├── fonts/              # Self-hosted шрифты
-├── img/                # Фото: hero/, places/<slug>/, icons/
-├── robots.txt
-├── sitemap.xml
-├── ATTRIBUTIONS.md
-└── LICENSE
+├── index.html          — единственная страница
+├── css/                — дизайн-система (tokens, reset, base, grid, carousel)
+├── js/                 — vanilla ES-модули (render, voting, carousel, theme)
+├── data/places.js      — 18 мест, единственный источник данных
+├── img/places/         — локальные AVIF/WebP версии фото (где доступны)
+└── fonts/              — self-hosted woff2 (Fraunces + Inter variable)
 ```
 
-## Лицензии
+## Фото и атрибуция
 
-- **Код**: MIT — `LICENSE`
-- **Шрифты**: SIL OFL 1.1 (Fraunces, Inter)
-- **Фотографии**: различные лицензии — `ATTRIBUTIONS.md`
+Фотографии из [Wikimedia Commons](https://commons.wikimedia.org/) под лицензиями CC BY / CC BY-SA / CC0. Полная атрибуция — в файле [ATTRIBUTIONS.md](ATTRIBUTIONS.md).
+
+## Лицензия
+
+Код — MIT. Фотографии — под лицензиями их авторов (см. ATTRIBUTIONS.md).

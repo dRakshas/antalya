@@ -4,6 +4,8 @@ const HEART_SVG = `<svg class="vote-btn__icon" viewBox="0 0 24 24" fill="none" s
 const CHECK_SVG = `<svg class="vote-btn__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>`;
 const CHECK_BADGE_SVG = `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>`;
 
+const SIZES = '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw';
+
 export function renderPlaces(gridEl) {
   const frag = document.createDocumentFragment();
 
@@ -16,23 +18,48 @@ export function renderPlaces(gridEl) {
   gridEl.appendChild(frag);
 }
 
+function encodePath(path) {
+  return path.split('/').map(seg => encodeURIComponent(seg).replace(/%2C/g, ',')).join('/');
+}
+
+function buildSlide(photo, isHero) {
+  const loading = isHero ? 'eager' : 'lazy';
+  const priority = isHero ? ' fetchpriority="high"' : '';
+
+  if (photo.local) {
+    const base = photo.local;
+    const baseEnc = encodePath(base);
+    const avifSrcset = `${baseEnc}-480w.avif 480w, ${baseEnc}-800w.avif 800w, ${baseEnc}-1280w.avif 1280w`;
+    const webpSrcset = `${baseEnc}-480w.webp 480w, ${baseEnc}-800w.webp 800w, ${baseEnc}-1280w.webp 1280w`;
+    return `<div class="carousel__slide">
+      <picture>
+        <source type="image/avif" srcset="${avifSrcset}" sizes="${SIZES}">
+        <source type="image/webp" srcset="${webpSrcset}" sizes="${SIZES}">
+        <img class="place-card__img"
+             src="${esc(photo.src)}"
+             alt="${esc(photo.alt)}"
+             width="400" height="300"
+             loading="${loading}"
+             decoding="async"${priority}>
+      </picture>
+    </div>`;
+  }
+
+  return `<div class="carousel__slide">
+    <img class="place-card__img"
+         src="${esc(photo.src)}"
+         alt="${esc(photo.alt)}"
+         width="400" height="300"
+         loading="${loading}"
+         decoding="async"${priority}>
+  </div>`;
+}
+
 function buildCard(place, cardIdx) {
   const isEarlyCard = cardIdx < 3;
 
   const slidesHTML = place.photos.map((photo, photoIdx) => {
-    const isHero = isEarlyCard && photoIdx === 0;
-    const loading = isHero ? 'eager' : 'lazy';
-    const priority = isHero ? 'fetchpriority="high"' : '';
-    return `<div class="carousel__slide">
-      <img class="place-card__img"
-           src="${esc(photo.src)}"
-           alt="${esc(photo.alt)}"
-           width="400" height="300"
-           loading="${loading}"
-           decoding="async"
-           crossorigin="anonymous"
-           ${priority}>
-    </div>`;
+    return buildSlide(photo, isEarlyCard && photoIdx === 0);
   }).join('');
 
   return `
@@ -41,7 +68,7 @@ function buildCard(place, cardIdx) {
            role="region"
            aria-roledescription="carousel"
            aria-label="${esc(place.title)} — фотографии">
-        <div class="carousel__track" tabindex="0" role="region" aria-label="${esc(place.title)} — слайды фото, прокрутка стрелками">
+        <div class="carousel__track" tabindex="0">
           ${slidesHTML}
         </div>
         <button class="carousel__prev" aria-label="Предыдущее фото" hidden>

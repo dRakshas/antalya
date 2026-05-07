@@ -28,10 +28,11 @@
   <link rel="alternate icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  <!-- Preload serif font for LCP hero heading -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400..700&display=swap">
+  <!-- Preload self-hosted fonts (LCP: Fraunces for hero heading) -->
+  <link rel="preload" href="fonts/Fraunces.var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter.var.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Preload hero image (LCP) -->
+  <link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/4/44/View_of_Konyaalt%C4%B1_Beach_and_Beyda%C4%9Flar%C4%B1_Mountains%2C_Antalya.jpg" fetchpriority="high">
 
   <!-- Apply saved theme before paint to prevent FOUC -->
   <script>
@@ -188,7 +189,7 @@
           <!-- Rendered by JS -->
         </ul>
 
-        <div class="mylist-actions" id="mylist-actions" aria-label="Действия со списком">
+        <div class="mylist-actions" id="mylist-actions" aria-label="Действия со списком" hidden>
           <button id="copy-btn" class="btn-outline" type="button">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
@@ -222,7 +223,7 @@
   <footer class="site-footer" role="contentinfo">
     <div class="container site-footer__inner">
       <p>Сделано с любовью к Анталье.</p>
-      <p>Фотографии: <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY / CC BY-SA). Исходники и атрибуция авторов — в <a href="https://github.com/" target="_blank" rel="noopener">репозитории</a>.</p>
+      <p>Фотографии: <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY / CC BY-SA). Исходники и атрибуция авторов — в <a href="https://github.com/dRakshas/antalya" target="_blank" rel="noopener">репозитории</a>.</p>
     </div>
   </footer>
 
