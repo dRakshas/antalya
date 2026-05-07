@@ -1,103 +1,123 @@
+/* ============================================================
+   Design tokens — Анталья 18
+   Единственный источник истины для всех CSS-переменных.
+   ============================================================ */
+
 :root {
-  /* Colors - Light Theme */
-  --c-bg: #FBF7F1;
-  --c-surface: #FFFFFF;
+  /* ---- Colors — light theme ---- */
+  --c-bg:           #FBF7F1;
+  --c-surface:      #FFFFFF;
   --c-surface-raised: #F4ECDF;
-  --c-text: #1F1A14;
-  --c-muted: #5A4F42;
-  --c-border: #E8DFCF;
-  --c-accent: #0B7C7E;
+  --c-text:         #1F1A14;
+  --c-muted:        #5A4F42;
+  --c-border:       #E8DFCF;
+  --c-accent:       #0B7C7E; /* QA-fixed: 4.69:1 on #FBF7F1 → WCAG AA */
   --c-accent-hover: #0A6F71;
-  --c-brand: #C95B3A;
-  --c-brand-soft: #E8B89A;
-  --c-voted: #2F7D5D;
-  --c-danger: #B23A2F;
-  --c-focus: #0B7C7E;
+  --c-brand:        #C95B3A;
+  --c-brand-soft:   #E8B89A;
+  --c-voted:        #2F7D5D;
+  --c-danger:       #B23A2F;
+  --c-focus:        #0B7C7E;
 
-  /* Spacing (8px grid) */
-  --s-1: 4px;
-  --s-2: 8px;
-  --s-3: 12px;
-  --s-4: 16px;
-  --s-5: 24px;
-  --s-6: 32px;
-  --s-7: 48px;
-  --s-8: 64px;
-  --s-9: 96px;
-  --s-10: 128px;
+  /* ---- Typography — font families ---- */
+  --font-heading: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
-  /* Border radii */
-  --r-sm: 8px;
-  --r-md: 16px;
-  --r-lg: 24px;
-  --r-xl: 32px;
-  --r-pill: 9999px;
+  /* ---- Typography — size scale (fluid, clamp) ---- */
+  --text-hero:   clamp(2.5rem, 6vw + 1rem, 6rem);
+  --text-h2:     clamp(1.875rem, 3vw + 1rem, 3.5rem);
+  --text-h3:     clamp(1.25rem, 1vw + 1rem, 1.5rem);
+  --text-lead:   1.25rem;
+  --text-body:   1rem;
+  --text-small:  0.875rem;
+  --text-button: 1rem;
 
-  /* Typography scale */
-  --t-hero:  clamp(2.5rem,  6vw + 1rem, 6rem);
-  --t-h2:    clamp(1.875rem, 3vw + 1rem, 3.5rem);
-  --t-h3:    clamp(1.25rem,  1vw + 1rem, 1.5rem);
-  --t-lead:  1.25rem;
-  --t-body:  1rem;
-  --t-small: 0.875rem;
-  --t-btn:   1rem;
-
-  /* Line heights */
-  --lh-hero:  1.05;
-  --lh-h2:    1.1;
-  --lh-h3:    1.2;
-  --lh-lead:  1.5;
-  --lh-body:  1.6;
+  /* ---- Typography — line heights ---- */
+  --lh-hero: 1.05;
+  --lh-h2:   1.1;
+  --lh-h3:   1.2;
+  --lh-lead: 1.5;
+  --lh-body: 1.6;
   --lh-small: 1.5;
+  --lh-button: 1;
 
-  /* Letter spacing */
+  /* ---- Typography — letter spacing ---- */
   --ls-hero:  -0.02em;
   --ls-h2:    -0.015em;
   --ls-h3:    -0.01em;
   --ls-small:  0.01em;
-  --ls-btn:    0.01em;
 
-  /* Font families */
-  --ff-heading: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --ff-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* ---- Spacing (8px grid) ---- */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  24px;
+  --s-6:  32px;
+  --s-7:  48px;
+  --s-8:  64px;
+  --s-9:  96px;
+  --s-10: 128px;
 
-  /* Layout */
-  --container-max: 1240px;
-  --container-padding: clamp(16px, 4vw, 32px);
-  --card-gap-mobile: var(--s-5);
-  --card-gap-desktop: var(--s-6);
+  /* ---- Border radii ---- */
+  --r-sm:   8px;
+  --r-md:   16px;
+  --r-lg:   24px;
+  --r-xl:   32px;
+  --r-pill: 9999px;
+
+  /* ---- Shadows ---- */
+  --shadow-card:       0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 12px 32px rgba(0, 0, 0, 0.08);
+  --shadow-btn-accent: 0 4px 12px rgba(14, 138, 140, 0.30);
+  --shadow-hero-text:  0 2px 12px rgba(0, 0, 0, 0.25);
+
+  /* ---- Easing ---- */
+  --ease-out:    cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ease-in:     cubic-bezier(0.4, 0.0, 1.0, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-sticky: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ---- Durations ---- */
+  --dur-fast:   100ms;
+  --dur-normal: 200ms;
+  --dur-medium: 300ms;
+  --dur-slow:   400ms;
+  --dur-appear: 500ms;
 }
 
-[data-theme="dark"] {
-  --c-bg: #13110E;
-  --c-surface: #1C1915;
-  --c-surface-raised: #26221C;
-  --c-text: #F2EBDC;
-  --c-muted: #A89B83;
-  --c-border: #332D24;
-  --c-accent: #3FBFC1;
-  --c-accent-hover: #5FD5D7;
-  --c-brand: #E07A5A;
-  --c-brand-soft: #3A2A22;
-  --c-voted: #5DB58A;
-  --c-danger: #E5705F;
-  --c-focus: #3FBFC1;
-}
-
+/* ---- Dark theme — system preference (fallback, no manual toggle) ---- */
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --c-bg: #13110E;
-    --c-surface: #1C1915;
+  :root:not([data-theme='light']) {
+    --c-bg:           #13110E;
+    --c-surface:      #1C1915;
     --c-surface-raised: #26221C;
-    --c-text: #F2EBDC;
-    --c-muted: #A89B83;
-    --c-border: #332D24;
-    --c-accent: #3FBFC1;
+    --c-text:         #F2EBDC;
+    --c-muted:        #A89B83;
+    --c-border:       #332D24;
+    --c-accent:       #3FBFC1;
     --c-accent-hover: #5FD5D7;
-    --c-brand: #E07A5A;
-    --c-brand-soft: #3A2A22;
-    --c-voted: #5DB58A;
-    --c-danger: #E5705F;
-    --c-focus: #3FBFC1;
+    --c-brand:        #E07A5A;
+    --c-brand-soft:   #3A2A22;
+    --c-voted:        #5DB58A;
+    --c-danger:       #E5705F;
+    --c-focus:        #3FBFC1;
   }
+}
+
+/* ---- Dark theme — manual toggle via data-theme="dark" ---- */
+[data-theme='dark'] {
+  --c-bg:           #13110E;
+  --c-surface:      #1C1915;
+  --c-surface-raised: #26221C;
+  --c-text:         #F2EBDC;
+  --c-muted:        #A89B83;
+  --c-border:       #332D24;
+  --c-accent:       #3FBFC1;
+  --c-accent-hover: #5FD5D7;
+  --c-brand:        #E07A5A;
+  --c-brand-soft:   #3A2A22;
+  --c-voted:        #5DB58A;
+  --c-danger:       #E5705F;
+  --c-focus:        #3FBFC1;
 }
