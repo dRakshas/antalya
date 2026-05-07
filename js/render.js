@@ -30,6 +30,7 @@ function buildCard(place, cardIdx) {
            width="400" height="300"
            loading="${loading}"
            decoding="async"
+           crossorigin="anonymous"
            ${priority}>
     </div>`;
   }).join('');
