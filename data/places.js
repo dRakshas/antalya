@@ -133,7 +133,7 @@ export const PLACES = [
     coords: [36.7686, 31.3892],
     description: 'Античный город на полуострове: колонны храма Аполлона стоят прямо на закатном берегу. Классический открыточный кадр Турции и живая курортная жизнь — всё рядом.',
     photos: [
-      { src: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Side_Apollon_Tap%C4%B1na%C4%9F%C4%9F%C4%B1.jpg', alt: 'Храм Аполлона в Сиде' },
+      { src: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Antalya_Side_Apollo.jpg', alt: 'Храм Аполлона в Сиде' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/%D0%90%D0%BD%D1%82%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%A1%D0%B8%D0%B4%D0%B5.JPG', alt: 'Античный Сиде' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/b/bc/Side_Panorama.jpg', alt: 'Панорама Сиде' },
       { src: 'https://upload.wikimedia.org/wikipedia/commons/6/62/2023-01-16_Side%2C_Turkey_5.jpg', alt: 'Сиде, 2023' },
