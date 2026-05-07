@@ -3,6 +3,7 @@ import { initCarousels } from './carousel.js';
 import { initVoting, updateAllCounters, updateStickyBar, renderMyList, copyList } from './voting.js';
 import { applyStoredTheme, initTheme } from './theme.js';
 import { getVotes, clearVotes } from './vote.js';
+import { initSubmit } from './submit.js';
 
 applyStoredTheme();
 
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initVoting();
   renderMyList();
+  initSubmit(getVotes);
 
   // Sticky bar controls
   const stickyOpen = document.getElementById('sticky-open');

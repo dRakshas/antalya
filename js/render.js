@@ -63,7 +63,7 @@ function buildCard(place, cardIdx) {
   }).join('');
 
   return `
-    <article class="place-card" id="place-${esc(place.slug)}" data-voted="false">
+    <article class="place-card" id="place-${esc(place.slug)}" data-voted="false" data-place-title="${esc(place.title)}">
       <div class="place-card__carousel"
            role="region"
            aria-roledescription="carousel"

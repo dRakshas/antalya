@@ -101,6 +101,7 @@
     <div class="container site-header__inner">
       <a href="#" class="site-header__logo" aria-label="Анталья 18 — главная">Анталья&thinsp;18</a>
       <nav class="site-header__actions" aria-label="Действия">
+        <a href="results.html" class="results-nav-link">Итоги</a>
         <a href="#my-list" class="header-list-link" aria-label="Мой список">
           Мой список
           <span class="header-list-link__count" data-list-count aria-label="мест выбрано">0</span>
@@ -190,6 +191,7 @@
         </ul>
 
         <div class="mylist-actions" id="mylist-actions" aria-label="Действия со списком" hidden>
+          <button id="submit-mylist-btn" class="submit-trigger" type="button">Отправить список</button>
           <button id="copy-btn" class="btn-outline" type="button">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
@@ -235,6 +237,7 @@
         мест в списке
       </span>
       <button id="sticky-open" class="sticky-bar__open" type="button">Открыть список</button>
+      <button id="sticky-submit" class="submit-trigger sticky-bar__submit" type="button">Отправить</button>
       <button id="sticky-close" class="sticky-bar__close" type="button" aria-label="Скрыть панель">×</button>
     </div>
   </aside>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Итоги голосования — Анталья 18</title>
+  <meta name="description" content="Результаты голосования по местам Антальи — какие места выбрали чаще всего.">
+  <link rel="canonical" href="https://drakshas.github.io/antalya/results.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preload" href="fonts/Fraunces.var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter.var.woff2" as="font" type="font/woff2" crossorigin>
+
+  <script>
+    (function() {
+      var t = localStorage.getItem('antalya18:theme');
+      if (t) document.documentElement.dataset.theme = t;
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .results-page { min-height: 100dvh; display: flex; flex-direction: column; }
+    .results-main { flex: 1; padding: var(--s-8) 0; }
+    .results-heading {
+      font-family: var(--font-heading);
+      font-size: var(--text-h2);
+      color: var(--c-text);
+      margin: 0 0 var(--s-2);
+    }
+    .results-sub {
+      color: var(--c-muted);
+      font-size: var(--text-small);
+      margin: 0 0 var(--s-6);
+    }
+
+    /* Trip tabs */
+    .trip-tabs {
+      display: flex;
+      gap: var(--s-2);
+      flex-wrap: wrap;
+      margin-bottom: var(--s-6);
+    }
+    .trip-tab {
+      padding: var(--s-2) var(--s-4);
+      border-radius: var(--r-pill);
+      border: 1.5px solid var(--c-border);
+      background: transparent;
+      font-family: var(--font-body);
+      font-size: var(--text-small);
+      font-weight: 600;
+      color: var(--c-muted);
+      cursor: pointer;
+      text-decoration: none;
+      transition: color var(--dur-fast), border-color var(--dur-fast), background var(--dur-fast);
+    }
+    .trip-tab:hover { color: var(--c-accent); border-color: var(--c-accent); }
+    .trip-tab--active {
+      background: var(--c-accent);
+      border-color: var(--c-accent);
+      color: #fff;
+    }
+
+    /* View toggle */
+    .view-toggle {
+      display: flex;
+      gap: var(--s-2);
+      margin-bottom: var(--s-5);
+    }
+    .view-btn {
+      padding: var(--s-2) var(--s-4);
+      border-radius: var(--r-pill);
+      border: 1.5px solid var(--c-border);
+      background: transparent;
+      font-family: var(--font-body);
+      font-size: var(--text-small);
+      font-weight: 600;
+      color: var(--c-muted);
+      cursor: pointer;
+      transition: all var(--dur-fast);
+    }
+    .view-btn--active {
+      background: var(--c-surface-raised);
+      color: var(--c-text);
+      border-color: var(--c-text);
+    }
+
+    /* Results table */
+    .results-table { width: 100%; border-collapse: collapse; }
+    .results-table th {
+      text-align: left;
+      padding: var(--s-2) var(--s-3);
+      font-size: var(--text-small);
+      color: var(--c-muted);
+      border-bottom: 1px solid var(--c-border);
+    }
+    .results-table td {
+      padding: var(--s-3) var(--s-3);
+      border-bottom: 1px solid var(--c-border);
+      font-size: var(--text-body);
+      color: var(--c-text);
+    }
+    .results-table tr:last-child td { border-bottom: none; }
+
+    .place-rank {
+      font-weight: 700;
+      color: var(--c-muted);
+      width: 2ch;
+    }
+    .place-name { font-weight: 600; }
+    .place-bar-cell { width: 40%; min-width: 120px; }
+    .place-bar-wrap { position: relative; height: 8px; background: var(--c-border); border-radius: var(--r-pill); overflow: hidden; }
+    .place-bar-fill { height: 100%; background: var(--c-accent); border-radius: var(--r-pill); transition: width 0.6s var(--ease-out); }
+    .place-count { color: var(--c-muted); font-size: var(--text-small); white-space: nowrap; }
+
+    .my-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: var(--r-pill);
+      background: var(--c-voted);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      margin-left: var(--s-2);
+      vertical-align: middle;
+    }
+
+    /* Empty / loading states */
+    .results-state {
+      text-align: center;
+      padding: var(--s-9) 0;
+      color: var(--c-muted);
+      font-size: var(--text-lead);
+    }
+    .results-spinner {
+      display: inline-block;
+      width: 32px; height: 32px;
+      border: 3px solid var(--c-border);
+      border-top-color: var(--c-accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-bottom: var(--s-4);
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Footer */
+    .results-footer {
+      padding: var(--s-5) 0;
+      border-top: 1px solid var(--c-border);
+      text-align: center;
+      font-size: var(--text-small);
+      color: var(--c-muted);
+    }
+    .results-footer a { color: var(--c-accent); text-decoration: none; }
+    .results-footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .place-bar-cell { display: none; }
+    }
+  </style>
+</head>
+<body class="results-page">
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-header__logo" aria-label="Анталья 18 — главная">Анталья&thinsp;18</a>
+      <nav class="site-header__actions" aria-label="Действия">
+        <a href="index.html" class="results-nav-link">← К местам</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Тёмная тема" type="button">
+          <svg id="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg id="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="display:none">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="results-main" id="main-content">
+    <div class="container">
+      <h1 class="results-heading">Итоги голосования</h1>
+      <p id="results-sub" class="results-sub">Загрузка…</p>
+
+      <!-- Trip tabs -->
+      <div id="trip-tabs" class="trip-tabs" role="tablist" aria-label="Выбор поездки"></div>
+
+      <!-- View toggle -->
+      <div class="view-toggle" id="view-toggle" hidden>
+        <button class="view-btn view-btn--active" data-view="all" type="button">Все голоса</button>
+        <button class="view-btn" data-view="mine" type="button">Мой выбор</button>
+      </div>
+
+      <!-- Results content -->
+      <div id="results-content">
+        <div class="results-state">
+          <div class="results-spinner"></div><br>Загружаем данные…
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="results-footer">
+    <div class="container">
+      <p>
+        <a href="index.html">← Обратно к картам</a>
+        &nbsp;·&nbsp;
+        Сделано с любовью к Анталье
+      </p>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { applyStoredTheme, initTheme } from './js/theme.js';
+    import { PLACES } from './data/places.js';
+    applyStoredTheme();
+
+    const PLACE_NAMES = Object.fromEntries(PLACES.map(p => [p.slug, p.title]));
+    const API = 'https://trips.148.227.170.181.nip.io';
+    const USER_KEY = 'antalya18:user_id';
+    const SUBMITTED_KEY = 'antalya18:submitted';
+
+    let currentTrip = null;
+    let allResults = null;
+    let myPlaces = null;
+    let currentView = 'all';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      initTheme();
+      await loadTrips();
+    });
+
+    async function loadTrips() {
+      try {
+        const res = await fetch(`${API}/api/trips`);
+        const trips = await res.json();
+        renderTabs(trips);
+        if (trips.length) {
+          selectTrip(trips[0]);
+        } else {
+          showState('Пока нет активных поездок.');
+        }
+      } catch {
+        showState('Не удалось загрузить данные. Проверьте соединение.');
+      }
+    }
+
+    function renderTabs(trips) {
+      const container = document.getElementById('trip-tabs');
+      container.innerHTML = '';
+      trips.forEach((trip, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'trip-tab' + (i === 0 ? ' trip-tab--active' : '');
+        btn.textContent = trip.title;
+        btn.dataset.tripId = trip.id;
+        btn.setAttribute('role', 'tab');
+        btn.addEventListener('click', () => {
+          container.querySelectorAll('.trip-tab').forEach(b => b.classList.remove('trip-tab--active'));
+          btn.classList.add('trip-tab--active');
+          selectTrip(trip);
+        });
+        container.appendChild(btn);
+      });
+    }
+
+    async function selectTrip(trip) {
+      currentTrip = trip;
+      showState('<div class="results-spinner"></div><br>Загружаем…');
+
+      const userId = localStorage.getItem(USER_KEY);
+      const submitted = !!localStorage.getItem(SUBMITTED_KEY);
+
+      try {
+        const [resultsRes, myRes] = await Promise.all([
+          fetch(`${API}/api/${trip.id}/results`),
+          userId ? fetch(`${API}/api/${trip.id}/my?user_id=${encodeURIComponent(userId)}`) : Promise.resolve(null),
+        ]);
+
+        allResults = await resultsRes.json();
+        myPlaces = myRes ? await myRes.json() : null;
+
+        const sub = document.getElementById('results-sub');
+        sub.textContent = `${allResults.total_voters} ${pluralVoters(allResults.total_voters)} проголосовало`;
+
+        const viewToggle = document.getElementById('view-toggle');
+        if (submitted && myPlaces?.submitted) {
+          viewToggle.removeAttribute('hidden');
+          viewToggle.querySelectorAll('.view-btn').forEach(btn => {
+            btn.classList.toggle('view-btn--active', btn.dataset.view === currentView);
+            btn.addEventListener('click', () => {
+              currentView = btn.dataset.view;
+              viewToggle.querySelectorAll('.view-btn').forEach(b =>
+                b.classList.toggle('view-btn--active', b.dataset.view === currentView)
+              );
+              renderResults();
+            });
+          });
+        } else {
+          viewToggle.setAttribute('hidden', '');
+        }
+
+        renderResults();
+      } catch {
+        showState('Не удалось загрузить результаты.');
+      }
+    }
+
+    function renderResults() {
+      const content = document.getElementById('results-content');
+      const { places, total_voters } = allResults;
+
+      if (!places.length) {
+        content.innerHTML = '<div class="results-state">Пока никто не проголосовал.</div>';
+        return;
+      }
+
+      const mySet = new Set(myPlaces?.places || []);
+      const myOnly = currentView === 'mine';
+
+      const filtered = myOnly ? places.filter(p => mySet.has(p.slug)) : places;
+
+      if (!filtered.length) {
+        content.innerHTML = '<div class="results-state">В вашем списке пока нет мест.</div>';
+        return;
+      }
+
+      const maxCount = filtered[0]?.count || 1;
+
+      const rows = filtered.map((p, i) => {
+        const pct = total_voters ? Math.round((p.count / total_voters) * 100) : 0;
+        const barWidth = Math.round((p.count / maxCount) * 100);
+        const inMine = mySet.has(p.slug);
+        const badge = (!myOnly && inMine) ? '<span class="my-badge">мой</span>' : '';
+        const title = PLACE_NAMES[p.slug] || p.slug;
+
+        return `<tr>
+          <td class="place-rank">${i + 1}</td>
+          <td class="place-name">${escHtml(title)}${badge}</td>
+          <td class="place-bar-cell">
+            <div class="place-bar-wrap">
+              <div class="place-bar-fill" style="width:${barWidth}%"></div>
+            </div>
+          </td>
+          <td class="place-count">${p.count} (${pct}%)</td>
+        </tr>`;
+      }).join('');
+
+      content.innerHTML = `<table class="results-table">
+        <thead><tr>
+          <th>#</th><th>Место</th><th class="place-bar-cell"></th><th>Голоса</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>`;
+
+      // Animate bars after render
+      requestAnimationFrame(() => {
+        content.querySelectorAll('.place-bar-fill').forEach(el => {
+          const w = el.style.width;
+          el.style.width = '0';
+          requestAnimationFrame(() => { el.style.width = w; });
+        });
+      });
+    }
+
+    function showState(html) {
+      document.getElementById('results-content').innerHTML = `<div class="results-state">${html}</div>`;
+    }
+
+    function pluralVoters(n) {
+      if (n % 10 === 1 && n % 100 !== 11) return 'человек';
+      if (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) return 'человека';
+      return 'человек';
+    }
+
+    function escHtml(s) {
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+  </script>
+</body>
+</html>
