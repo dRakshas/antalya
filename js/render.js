@@ -41,7 +41,7 @@ function buildCard(place, cardIdx) {
            role="region"
            aria-roledescription="carousel"
            aria-label="${esc(place.title)} — фотографии">
-        <div class="carousel__track" tabindex="-1">
+        <div class="carousel__track" tabindex="0" role="region" aria-label="${esc(place.title)} — слайды фото, прокрутка стрелками">
           ${slidesHTML}
         </div>
         <button class="carousel__prev" aria-label="Предыдущее фото" hidden>
