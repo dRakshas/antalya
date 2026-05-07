@@ -2,9 +2,22 @@ import { renderPlaces, renderFilterChips } from './render.js';
 import { initCarousels } from './carousel.js';
 import { initVoting, updateAllCounters, updateStickyBar, renderMyList, copyList } from './voting.js';
 import { applyStoredTheme, initTheme } from './theme.js';
+import { getVotes, clearVotes } from './vote.js';
 
-// Apply stored theme before first paint (module is deferred, but this runs ASAP after HTML parse)
 applyStoredTheme();
+
+// Transparent header over hero — switch on IntersectionObserver
+(function initTransparentHeader() {
+  const header = document.getElementById('site-header');
+  const hero = document.querySelector('.hero');
+  if (!header || !hero) return;
+
+  const obs = new IntersectionObserver(
+    ([entry]) => header.classList.toggle('site-header--transparent', entry.isIntersecting),
+    { threshold: 0.1 }
+  );
+  obs.observe(hero);
+})();
 
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.getElementById('places-grid-list');
@@ -40,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Don't show sticky bar if dismissed this session
   if (sessionStorage.getItem('antalya18:bar-dismissed')) {
     const bar = document.getElementById('sticky-bar');
     if (bar) bar.setAttribute('hidden', '');
@@ -55,30 +67,49 @@ document.addEventListener('DOMContentLoaded', () => {
   if (shareBtn) {
     if (navigator.share) {
       shareBtn.addEventListener('click', () => {
-        navigator.share({ title: '18 мест Антальи', url: location.href })
-          .catch(() => {});
+        navigator.share({ title: '18 мест Антальи', url: location.href }).catch(() => {});
       });
     } else {
       shareBtn.hidden = true;
     }
   }
 
-  // Clear list
+  // Clear list — two-step confirm (no browser dialog)
   const clearBtn = document.getElementById('clear-btn');
   if (clearBtn) {
+    const origHTML = clearBtn.innerHTML;
+    let clearPending = false;
+    let clearTimer = null;
+
+    const resetClear = () => {
+      clearPending = false;
+      clearBtn.innerHTML = origHTML;
+      clearBtn.removeAttribute('data-confirm');
+    };
+
     clearBtn.addEventListener('click', () => {
-      if (!confirm('Очистить список?')) return;
-      try { localStorage.removeItem('antalya18:list'); } catch {}
-      document.querySelectorAll('.vote-btn[aria-pressed="true"]').forEach(btn => {
-        btn.setAttribute('aria-pressed', 'false');
-        const label = btn.querySelector('.vote-btn__label');
-        if (label) label.textContent = 'Хочу сюда';
-        const card = btn.closest('.place-card');
-        if (card) card.dataset.voted = 'false';
-      });
-      updateAllCounters();
-      updateStickyBar();
-      renderMyList();
+      if (!getVotes().length) return;
+
+      if (!clearPending) {
+        clearPending = true;
+        clearBtn.textContent = 'Уверены? Нажмите ещё раз';
+        clearBtn.dataset.confirm = 'true';
+        clearTimer = setTimeout(resetClear, 3000);
+      } else {
+        clearTimeout(clearTimer);
+        clearVotes();
+        document.querySelectorAll('.vote-btn[aria-pressed="true"]').forEach(btn => {
+          btn.setAttribute('aria-pressed', 'false');
+          const label = btn.querySelector('.vote-btn__label');
+          if (label) label.textContent = 'Хочу сюда';
+          const card = btn.closest('.place-card');
+          if (card) card.dataset.voted = 'false';
+        });
+        updateAllCounters();
+        updateStickyBar();
+        renderMyList();
+        resetClear();
+      }
     });
   }
 });

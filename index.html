@@ -1,53 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru" data-theme="">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>18 мест Антальи — персональный путеводитель</title>
-  <meta name="description" content="Персональный путеводитель по 18 лучшим местам Антальи: пляжи, античные города, каньоны, водопады." />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#0E8A8C" />
-  <link rel="canonical" href="https://drakshas.github.io/antalya/" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>18 мест Антальи — выбери своё</title>
+  <meta name="description" content="Интерактивный гид по 18 лучшим местам Антальи: пляжи, античные города, каньоны, водопады. Собери свой список и не потеряй.">
+  <link rel="canonical" href="https://drakshas.github.io/antalya/">
 
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="icon" href="favicon.ico" sizes="any" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="18 мест Антальи — выбери своё">
+  <meta property="og:description" content="Интерактивный гид: пляжи, античные города, каньоны, водопады. Нажми сердечко — соберёт список.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://drakshas.github.io/antalya/">
+  <meta property="og:image" content="https://drakshas.github.io/antalya/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ru_RU">
 
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://drakshas.github.io/antalya/" />
-  <meta property="og:title" content="18 мест Антальи — персональный путеводитель" />
-  <meta property="og:description" content="Пляжи, античные города, каньоны и водопады в радиусе 200 км от Антальи. Собери свой список мест без регистрации и трекинга." />
-  <meta property="og:image" content="https://drakshas.github.io/antalya/og-image.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Анталья — 18 мест: пляжи, античные города, каньоны и водопады" />
-  <meta property="og:locale" content="ru_RU" />
-  <meta property="og:site_name" content="Анталья 18" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="18 мест Антальи — выбери своё">
+  <meta name="twitter:description" content="Интерактивный гид: пляжи, античные города, каньоны, водопады. Нажми сердечко — соберёт список.">
+  <meta name="twitter:image" content="https://drakshas.github.io/antalya/og-image.jpg">
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="18 мест Антальи — персональный путеводитель" />
-  <meta name="twitter:description" content="Пляжи, античные города, каньоны и водопады в радиусе 200 км от Антальи." />
-  <meta name="twitter:image" content="https://drakshas.github.io/antalya/og-image.jpg" />
-  <meta name="twitter:image:alt" content="Анталья — 18 мест: пляжи, античные города, каньоны и водопады" />
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Анталья 18 — персональный путеводитель",
-    "alternateName": "18 мест Антальи",
-    "url": "https://drakshas.github.io/antalya/",
-    "inLanguage": "ru",
-    "description": "Персональный путеводитель по 18 лучшим местам Антальи: пляжи, античные города, каньоны, водопады."
-  }
-  </script>
-
-  <!-- Google Fonts -->
+  <!-- Preload serif font for LCP hero heading -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400..700&display=swap">
 
-  <!-- Apply saved theme before paint (prevents FOUC) -->
+  <!-- Apply saved theme before paint to prevent FOUC -->
   <script>
     (function() {
       var t = localStorage.getItem('antalya18:theme');
@@ -55,19 +41,62 @@
     })();
   </script>
 
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- JSON-LD: WebPage + ItemList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://drakshas.github.io/antalya/",
+        "name": "18 мест Антальи — выбери своё",
+        "description": "Интерактивный гид по 18 лучшим местам Антальи: пляжи, античные города, каньоны, водопады.",
+        "url": "https://drakshas.github.io/antalya/",
+        "inLanguage": "ru"
+      },
+      {
+        "@type": "ItemList",
+        "name": "18 мест Антальи",
+        "numberOfItems": 18,
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"item":{"@type":"TouristAttraction","name":"Коньяалты","url":"https://drakshas.github.io/antalya/#place=konyaalti"}},
+          {"@type":"ListItem","position":2,"item":{"@type":"TouristAttraction","name":"Чиралы","url":"https://drakshas.github.io/antalya/#place=cirali"}},
+          {"@type":"ListItem","position":3,"item":{"@type":"TouristAttraction","name":"Адрасан","url":"https://drakshas.github.io/antalya/#place=adrasan"}},
+          {"@type":"ListItem","position":4,"item":{"@type":"TouristAttraction","name":"Текирова / бухта Маден","url":"https://drakshas.github.io/antalya/#place=maden"}},
+          {"@type":"ListItem","position":5,"item":{"@type":"TouristAttraction","name":"Фазелис","url":"https://drakshas.github.io/antalya/#place=phaselis"}},
+          {"@type":"ListItem","position":6,"item":{"@type":"TouristAttraction","name":"Сулуада","url":"https://drakshas.github.io/antalya/#place=suluada"}},
+          {"@type":"ListItem","position":7,"item":{"@type":"TouristAttraction","name":"Кемер","url":"https://drakshas.github.io/antalya/#place=kemer"}},
+          {"@type":"ListItem","position":8,"item":{"@type":"TouristAttraction","name":"Термессос","url":"https://drakshas.github.io/antalya/#place=termessos"}},
+          {"@type":"ListItem","position":9,"item":{"@type":"TouristAttraction","name":"Аспендос","url":"https://drakshas.github.io/antalya/#place=aspendos"}},
+          {"@type":"ListItem","position":10,"item":{"@type":"TouristAttraction","name":"Сиде","url":"https://drakshas.github.io/antalya/#place=side"}},
+          {"@type":"ListItem","position":11,"item":{"@type":"TouristAttraction","name":"Калеичи","url":"https://drakshas.github.io/antalya/#place=kaleici"}},
+          {"@type":"ListItem","position":12,"item":{"@type":"TouristAttraction","name":"Янарташ / Химера","url":"https://drakshas.github.io/antalya/#place=yanartas"}},
+          {"@type":"ListItem","position":13,"item":{"@type":"TouristAttraction","name":"Каньон Гёйнюк","url":"https://drakshas.github.io/antalya/#place=goynuk"}},
+          {"@type":"ListItem","position":14,"item":{"@type":"TouristAttraction","name":"Олимпос","url":"https://drakshas.github.io/antalya/#place=olympos"}},
+          {"@type":"ListItem","position":15,"item":{"@type":"TouristAttraction","name":"Мира Ликийская / Демре","url":"https://drakshas.github.io/antalya/#place=myra"}},
+          {"@type":"ListItem","position":16,"item":{"@type":"TouristAttraction","name":"Перге","url":"https://drakshas.github.io/antalya/#place=perge"}},
+          {"@type":"ListItem","position":17,"item":{"@type":"TouristAttraction","name":"Водопад Дюден","url":"https://drakshas.github.io/antalya/#place=duden"}},
+          {"@type":"ListItem","position":18,"item":{"@type":"TouristAttraction","name":"Водопад Куршунлу","url":"https://drakshas.github.io/antalya/#place=kursunlu"}}
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
   <!-- Skip link -->
-  <a href="#places-grid" class="sr-only" style="position:absolute;top:0;left:0;padding:8px 16px;background:var(--c-accent);color:white;border-radius:0 0 8px 0;z-index:999;clip:rect(0 0 0 0);width:1px;height:1px;overflow:hidden"
-    onfocus="this.style.clip='auto';this.style.width='auto';this.style.height='auto';this.style.overflow='visible'">Перейти к местам</a>
+  <a href="#places-grid" class="sr-only" style="position:absolute;top:0;left:0;padding:8px 16px;background:var(--c-accent);color:white;border-radius:0 0 8px 0;z-index:999;
+    clip:auto !important;width:auto !important;height:auto !important;overflow:visible !important"
+    onfocus="this.style.clip='auto'">Перейти к местам</a>
 
   <!-- Live region for screen readers -->
-  <div id="a11y-announce" aria-live="polite" aria-atomic="true" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0"></div>
+  <div id="a11y-announce" aria-live="polite" aria-atomic="true" class="sr-only"></div>
 
   <!-- ===== Header ===== -->
-  <header class="site-header" role="banner">
+  <header id="site-header" class="site-header" role="banner">
     <div class="container site-header__inner">
       <a href="#" class="site-header__logo" aria-label="Анталья 18 — главная">Анталья&thinsp;18</a>
       <nav class="site-header__actions" aria-label="Действия">
@@ -87,6 +116,9 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
           </svg>
+          <svg id="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="display:none">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
         </button>
       </nav>
     </div>
@@ -96,6 +128,14 @@
 
     <!-- ===== Hero ===== -->
     <section class="hero" aria-label="Заставка">
+      <img class="hero__bg"
+           src="https://upload.wikimedia.org/wikipedia/commons/4/44/View_of_Konyaalt%C4%B1_Beach_and_Beyda%C4%9Flar%C4%B1_Mountains%2C_Antalya.jpg"
+           alt=""
+           width="2048" height="1152"
+           loading="eager"
+           decoding="async"
+           fetchpriority="high"
+           aria-hidden="true">
       <div class="hero__content">
         <h1 class="hero__title">18&nbsp;мест&nbsp;Антальи</h1>
         <p class="hero__lead">Пляжи, античные города, каньоны и водопады. Нажми сердечко на местах, которые хочется увидеть — соберём список, можно будет скопировать.</p>
@@ -107,6 +147,13 @@
       </div>
     </section>
 
+    <!-- ===== Intro ===== -->
+    <section class="intro-section" aria-label="О подборке">
+      <div class="container">
+        <p class="intro-text">Восемнадцать мест, которые стоит увидеть в провинции Анталья: дикие бухты, античные города среди сосен, каньоны с холодной водой и водопады у самого моря. Нажми «Хочу сюда» на карточках — соберём список, который можно скопировать или отправить другу.</p>
+      </div>
+    </section>
+
     <!-- ===== Places grid ===== -->
     <section id="places-grid" aria-labelledby="places-heading" class="places-section">
       <div class="container">
@@ -115,44 +162,17 @@
         </div>
         <!-- Filter chips -->
         <div id="filter-chips" class="filter-chips" role="group" aria-label="Фильтр по категориям"></div>
-        <!-- Cards — rendered by JS -->
+        <!-- Cards -->
         <ul id="places-grid-list" class="places-grid" role="list" aria-label="Список мест Антальи">
           <!-- Rendered by JS -->
         </ul>
-
-        <!-- No-JS fallback -->
-        <noscript>
-          <div style="margin-top:1rem;padding:1.5rem;background:#f5f0e8;border-radius:12px;border:1px solid #e8dfcf">
-            <p style="font-weight:600;margin-bottom:1rem;color:#1f1a14">Для интерактивных функций включите JavaScript. Все 18 мест Антальи:</p>
-            <ul style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0.5rem">
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Коньяалты</strong> — пляж</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Чиралы</strong> — пляж</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Адрасан</strong> — природа</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Текирова / бухта Маден</strong> — природа</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Фазелис</strong> — античный город</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Сулуада</strong> — природа</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Кемер</strong> — город</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Термессос</strong> — античный город</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Аспендос</strong> — античный город</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Сиде</strong> — античный город</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Калеичи</strong> — старый город</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Янарташ / Химера</strong> — природа</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Каньон Гёйнюк</strong> — природа</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Олимпос</strong> — античный город</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Мира Ликийская / Демре</strong> — античный город</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Перге</strong> — античный город</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Водопад Дюден</strong> — природа</li>
-              <li style="padding:0.5rem 0.75rem;background:white;border-radius:8px;border:1px solid #e8dfcf"><strong>Водопад Куршунлу</strong> — природа</li>
-            </ul>
-          </div>
-        </noscript>
       </div>
     </section>
 
     <!-- ===== My list ===== -->
     <section id="my-list" aria-labelledby="mylist-heading" class="mylist-section">
       <div class="container">
-        <h2 id="mylist-heading" class="section-heading">Мой список</h2>
+        <h2 id="mylist-heading" class="section-heading">Мой список <span class="mylist-heading__count" aria-live="polite" aria-atomic="true">(<span id="mylist-count">0</span>)</span></h2>
 
         <div id="mylist-empty" class="mylist-empty" aria-live="polite">
           <div class="mylist-empty__icon" aria-hidden="true">
@@ -202,12 +222,12 @@
   <footer class="site-footer" role="contentinfo">
     <div class="container site-footer__inner">
       <p>Сделано с любовью к Анталье.</p>
-      <p>Фотографии: <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY / CC BY-SA). Исходники и атрибуция авторов — в <a href="https://github.com/dRakshas/antalya" target="_blank" rel="noopener">репозитории</a>.</p>
+      <p>Фотографии: <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY / CC BY-SA). Исходники и атрибуция авторов — в <a href="https://github.com/" target="_blank" rel="noopener">репозитории</a>.</p>
     </div>
   </footer>
 
   <!-- ===== Sticky bar ===== -->
-  <aside id="sticky-bar" role="region" aria-label="Мой список" hidden>
+  <aside id="sticky-bar" class="sticky-bar" role="region" aria-label="Мой список" hidden>
     <div class="sticky-bar__inner">
       <span class="sticky-bar__count">
         <span class="sticky-bar__pill" data-list-count>0</span>
